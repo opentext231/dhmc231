@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -1308,7 +1310,8 @@
 													<Notes/>
 													<DeveloperText>Provider</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B222-B9420930A324"
+														<uri
+															id="005056A5-1B45-A1EB-B222-B9420930A324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1346,7 +1349,8 @@
 													<Notes/>
 													<DeveloperText>Payor</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B291-FB0BE4106324"
+														<uri
+															id="005056A5-1B45-A1EB-B291-FB0BE4106324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1542,6 +1546,7 @@
 							<DefaultValue>Unsent</DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2043,6 +2048,7 @@
 							<DefaultValue>RFI was cancelled by DMHC</DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2307,6 +2313,7 @@
 							<DefaultValue>RFI Response is Overdue</DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2531,7 +2538,7 @@
 											<Value>New</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B826-CCACF1D0E324"
+													id="0242ac13-0004-a1ef-952b-801b994e3651"
 													path="Provider Complaint/Web/Images/new.jpg"
 													type="com.cordys.cws.documenttypes.image.Jpg"
 												/>
@@ -2555,7 +2562,8 @@
 													<Notes/>
 													<DeveloperText>New</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C7FE2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C7FE2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2575,7 +2583,7 @@
 											<Value>Ready To Send</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B826-DBB97E54A324"
+													id="0242ac13-0004-a1ef-952b-801c4d87b651"
 													path="Provider Complaint/Web/Images/readytosend.png"
 													type="com.cordys.cws.documenttypes.image.Png"
 												/>
@@ -2599,7 +2607,8 @@
 													<Notes/>
 													<DeveloperText>Ready To Send</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B57D-56B270E2E324"
+														<uri
+															id="005056A5-1B45-A1EB-B57D-56B270E2E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2619,7 +2628,7 @@
 											<Value>Wait</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B826-B92A8DE3A324"
+													id="0242ac13-0004-a1ef-952b-801cdbec3651"
 													path="Provider Complaint/Web/Images/wait.png"
 													type="com.cordys.cws.documenttypes.image.Png"
 												/>
@@ -2643,7 +2652,8 @@
 													<Notes/>
 													<DeveloperText>Wait</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B60A-C4FF9257E324"
+														<uri
+															id="005056A5-1B45-A1EB-B60A-C4FF9257E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2681,7 +2691,8 @@
 													<Notes/>
 													<DeveloperText>Superseded</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B60A-E5BD3A686324"
+														<uri
+															id="005056A5-1B45-A1EB-B60A-E5BD3A686324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2701,7 +2712,7 @@
 											<Value>Complete</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B827-23B78867E324"
+													id="0242ac13-0004-a1ef-952b-801c963eb651"
 													path="Provider Complaint/Web/Images/completed.png"
 													type="com.cordys.cws.documenttypes.image.Png"
 												/>
@@ -2725,7 +2736,8 @@
 													<Notes/>
 													<DeveloperText>Complete</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33BE86324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33BE86324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2745,7 +2757,7 @@
 											<Value>Overdue</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B827-F145B7A26324"
+													id="0242ac13-0004-a1ef-952b-801d5bf0b651"
 													path="Provider Complaint/Web/Images/overdue.png"
 													type="com.cordys.cws.documenttypes.image.Png"
 												/>
@@ -2769,7 +2781,8 @@
 													<Notes/>
 													<DeveloperText>Overdue</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33BE26324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33BE26324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2789,7 +2802,7 @@
 											<Value>Cancelled</Value>
 											<Icon>
 												<uri
-													id="005056A5-1B45-A1EB-B827-1942A31DE324"
+													id="0242ac13-0004-a1ef-952b-801be2d73651"
 													path="Provider Complaint/Web/Images/cancelled.jpg"
 													type="com.cordys.cws.documenttypes.image.Jpg"
 												/>
@@ -2813,7 +2826,8 @@
 													<Notes/>
 													<DeveloperText>Cancelled</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B60A-F3CEDCFE2324"
+														<uri
+															id="005056A5-1B45-A1EB-B60A-F3CEDCFE2324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2840,7 +2854,7 @@
 		</PropertyBuildingBlock>
 		<TaskListBuildingBlock
 			type="com.cordys.entity.buildingblocks.tasklist.TaskListBuildingBlock"
-			typeVersion="1F66C65E-A463-4FB6-B249-3C7DE6293509"
+			typeVersion="FB748954-FAA0-4215-8848-E4A76DBEEC65"
 			RuntimeDocumentID="005056A5-1B45-A1EB-B60A-C1A441CDA324">
 			<DocumentID>005056A5-1B45-A1EB-B60A-C1A441CD6324</DocumentID>
 			<Name>TaskList</Name>
@@ -3205,6 +3219,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3264,6 +3279,7 @@
 					<HistoryLogReferenceName>RFI_HistoryLog</HistoryLogReferenceName>
 					<OnDeleteAction>0</OnDeleteAction>
 					<RecordAccessEvents>false</RecordAccessEvents>
+					<ShowCumulativeAudit>false</ShowCumulativeAudit>
 					<DisplayName/>
 					<HistoryLog>
 						<uri
@@ -3290,6 +3306,7 @@
 		</HistoryBuildingBlock>
 		<TrackingBuildingBlock
 			type="com.cordys.entity.buildingblocks.tracking.TrackingBuildingBlock"
+			typeVersion="3879939F-3AE9-48DF-A070-A7056C85FB88"
 			RuntimeDocumentID="005056A5-1B45-A1EB-B613-AE36165EA324">
 			<DocumentID>005056A5-1B45-A1EB-B613-AE36165E6324</DocumentID>
 			<Name>Tracking</Name>
@@ -3304,6 +3321,32 @@
 			</Entity>
 			<InlinedEntities/>
 			<Original/>
+			<OwnedActions>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-a997dab4b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-a997daa0b652</DocumentID>
+					<Name>MarkAsRead</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:26.731</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsRead</ActionDisplayName>
+					<ActionId>F53249C9B9774D49A052D16FBB9D7624</ActionId>
+				</TrackingAction>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-a997db86b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-a997db753652</DocumentID>
+					<Name>MarkAsUnread</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:43.105</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsUnread</ActionDisplayName>
+					<ActionId>B3EC8D7188F94F4A90C73D7378BEF9A9</ActionId>
+				</TrackingAction>
+			</OwnedActions>
 			<Properties>
 				<Property
 					type="com.cordys.entity.core.structure.property.Property"
@@ -3583,10 +3626,65 @@
 						/>
 					</Target>
 				</Relationship>
+				<Relationship
+					type="com.cordys.entity.core.structure.relationship.Relationship"
+					typeVersion="17A97EEB-DDB4-477D-8C9F-C9238015F2A2"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-a997d7e73652">
+					<DocumentID>ACA9581A-1C8B-3836-B607-F7CEEC35D147</DocumentID>
+					<Name>ReadBy</Name>
+					<Description>ReadBy</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:22.352</CreationDate>
+					<Notes/>
+					<ExposeForReuse>false</ExposeForReuse>
+					<HasFK>false</HasFK>
+					<MaxCardinality>-1</MaxCardinality>
+					<MinCardinality>0</MinCardinality>
+					<OwnsJoinTable>true</OwnsJoinTable>
+					<RelationshipType>ToPeer</RelationshipType>
+					<RestrictDeleteTarget>false</RestrictDeleteTarget>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-B613-AE36165E6324"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<ForeignKeyProperties>
+						<uri
+							id="86F130BF-12C7-35BD-B8DF-A3877A0153AE"
+						/>
+					</ForeignKeyProperties>
+					<Inverse/>
+					<Original/>
+					<ReferringProperties>
+						<ReferringProperty
+							type="com.cordys.entity.core.structure.relationship.ReferringProperty"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-a997d95e3652">
+							<DocumentID>86F130BF-12C7-35BD-B8DF-A3877A0153AE</DocumentID>
+							<Name>ReadBy_Id</Name>
+							<Description>ReadBy_Id</Description>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:26.744</CreationDate>
+							<Notes/>
+							<NameIsExternallyManaged>false</NameIsExternallyManaged>
+							<TargetProperty>
+								<uri
+									id="F8B156B4-FF8F-11E6-E6F1-BB7823D79319"
+								/>
+							</TargetProperty>
+						</ReferringProperty>
+					</ReferringProperties>
+					<Target>
+						<uri
+							id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+						/>
+					</Target>
+				</Relationship>
 			</Relationships>
 			<Tracking>
 				<Tracking
 					type="com.cordys.entity.buildingblocks.tracking.Tracking"
+					typeVersion="EEA67FA8-049B-498D-A635-D0A9B48E2456"
 					RuntimeDocumentID="005056A5-1B45-A1EB-B613-AE36165E2324">
 					<DocumentID>005056A5-1B45-A1EB-B613-AE36165DE324</DocumentID>
 					<Name>Tracking</Name>
@@ -3595,6 +3693,7 @@
 					<CreationDate>2021-06-28T21:24:25.326</CreationDate>
 					<Notes/>
 					<ParentAlso>false</ParentAlso>
+					<ReadBy>false</ReadBy>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-B613-AE36165E6324"

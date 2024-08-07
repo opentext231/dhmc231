@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -793,7 +795,8 @@
 													<Notes/>
 													<DeveloperText>HMO</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B122-0388AAE36324"
+														<uri
+															id="005056A5-1B45-A1EB-B122-0388AAE36324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -831,7 +834,8 @@
 													<Notes/>
 													<DeveloperText>PPO</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B122-0388AAE16324"
+														<uri
+															id="005056A5-1B45-A1EB-B122-0388AAE16324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -869,7 +873,8 @@
 													<Notes/>
 													<DeveloperText>EPO</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B122-0388AADF6324"
+														<uri
+															id="005056A5-1B45-A1EB-B122-0388AADF6324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -907,7 +912,8 @@
 													<Notes/>
 													<DeveloperText>POS</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B122-0388AADD6324"
+														<uri
+															id="005056A5-1B45-A1EB-B122-0388AADD6324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1040,7 +1046,8 @@
 													<Notes/>
 													<DeveloperText>Large Group</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DFC2324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DFC2324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1078,7 +1085,8 @@
 													<Notes/>
 													<DeveloperText>Small Group</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DFAA324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DFAA324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1116,7 +1124,8 @@
 													<Notes/>
 													<DeveloperText>Individual</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8E9-65A06CD7E320"
+														<uri
+															id="005056A5-1B45-A1EB-A8E9-65A06CD7E320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1154,7 +1163,8 @@
 													<Notes/>
 													<DeveloperText>Medi-Cal</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DF8A324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DF8A324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1192,7 +1202,8 @@
 													<Notes/>
 													<DeveloperText>Medicare</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DF5A324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DF5A324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1230,7 +1241,8 @@
 													<Notes/>
 													<DeveloperText>MSP</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DF42324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DF42324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1268,7 +1280,8 @@
 													<Notes/>
 													<DeveloperText>ERISA</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DF2A324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DF2A324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1306,7 +1319,8 @@
 													<Notes/>
 													<DeveloperText>Non-ERISA</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DEFA324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DEFA324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1344,7 +1358,8 @@
 													<Notes/>
 													<DeveloperText>Life and Indemmity</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DEE2324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DEE2324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1382,7 +1397,8 @@
 													<Notes/>
 													<DeveloperText>Other</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-95C85DECA324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-95C85DECA324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1515,7 +1531,8 @@
 													<Notes/>
 													<DeveloperText>N/A</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-ACA7-3CA97E2B6322"
+														<uri
+															id="005056A5-1B45-A1EB-ACA7-3CA97E2B6322"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1553,7 +1570,8 @@
 													<Notes/>
 													<DeveloperText>R&amp;C Dispute-ER Services</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-EBAFC4ABE324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-EBAFC4ABE324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1591,7 +1609,8 @@
 													<Notes/>
 													<DeveloperText>R&amp;C Dispute-Other</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-EBAFC4A8E324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-EBAFC4A8E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1724,7 +1743,8 @@
 													<Notes/>
 													<DeveloperText>Attached</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-EBAFC4B9A324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-EBAFC4B9A324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1762,7 +1782,8 @@
 													<Notes/>
 													<DeveloperText>Pending</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-BA47-EBAFC4B82324"
+														<uri
+															id="005056A5-1B45-A1EB-BA47-EBAFC4B82324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2238,6 +2259,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3121,6 +3143,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3194,6 +3217,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>2048</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3267,6 +3291,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>2048</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>

@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -786,6 +788,7 @@
 							<CreationDate>2021-06-14T13:30:00.033</CreationDate>
 							<Notes/>
 							<DocumentTemplateName>Default template</DocumentTemplateName>
+							<ContentTemplate/>
 							<DocumentGroups>
 								<DocumentGroup
 									type="com.cordys.entity.buildingblocks.contenttemplate.DocumentGroup"
@@ -891,6 +894,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>512</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -942,6 +946,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>512</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1046,7 +1051,8 @@
 													<Notes/>
 													<DeveloperText>File</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8B6-C819E1FC2320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-C819E1FC2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1084,7 +1090,8 @@
 													<Notes/>
 													<DeveloperText>Static folder</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8B6-C819E1FA2320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-C819E1FA2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1122,7 +1129,8 @@
 													<Notes/>
 													<DeveloperText>Dynamic folder</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8B6-C819E1F82320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-C819E1F82320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1379,7 +1387,7 @@
 		</ContentTemplateBuildingBlock>
 		<FileBuildingBlock
 			type="com.cordys.entity.buildingblocks.file.FileBuildingBlock"
-			typeVersion="484D7EEB-6ECA-A1E9-A786-D32D8AE2C341"
+			typeVersion="8C16454B-C921-A1ED-9377-9E052894B50B"
 			RuntimeDocumentID="005056A5-1B45-A1EB-B344-DA85E1FA2324">
 			<DocumentID>005056A5-1B45-A1EB-B344-DA85E1F9E324</DocumentID>
 			<Name>File</Name>
@@ -1403,6 +1411,7 @@
 					<CreationDate>2021-06-14T13:30:00.033</CreationDate>
 					<Notes/>
 					<ConvertedMaxFileSize></ConvertedMaxFileSize>
+					<EnableESignature>false</EnableESignature>
 					<EnableUploadOnError>true</EnableUploadOnError>
 					<FileSizeUnit></FileSizeUnit>
 					<FileTypes></FileTypes>
@@ -1618,6 +1627,66 @@
 					<ActionDisplayName>deleteDocument</ActionDisplayName>
 					<ActionId>9890969C4603A1E8B6786AF08CEA775E</ActionId>
 				</FileAction>
+				<FileAction
+					type="com.cordys.entity.buildingblocks.file.FileAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9dcdccf7b652">
+					<DocumentID>C8DA15CA-5717-3FBA-9EE6-388E47351372</DocumentID>
+					<Name>Edit</Name>
+					<Description>Edit</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:40.804</CreationDate>
+					<Notes/>
+					<ActionDisplayName>editDocument</ActionDisplayName>
+					<ActionId>3D47F2DB81F9454CB0674D804BA12EDA</ActionId>
+				</FileAction>
+				<FileAction
+					type="com.cordys.entity.buildingblocks.file.FileAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9dee684d3652">
+					<DocumentID>251DEB14-6C26-3758-A886-496817463CFD</DocumentID>
+					<Name>RenameDocument</Name>
+					<Description>RenameDocument</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:08.418</CreationDate>
+					<Notes/>
+					<ActionDisplayName>renameDocument</ActionDisplayName>
+					<ActionId>A4C3F04AEC1AA1ECB7FF1177EDAB0ED8</ActionId>
+				</FileAction>
+				<FileAction
+					type="com.cordys.entity.buildingblocks.file.FileAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9dee690b3652">
+					<DocumentID>6C8A2F55-FF66-326B-B1AF-D450560E7AD1</DocumentID>
+					<Name>SendForSignature</Name>
+					<Description>SendForSignature</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:10.568</CreationDate>
+					<Notes/>
+					<ActionDisplayName>sendForSignature</ActionDisplayName>
+					<ActionId>8C16454BC921A1ED9375773DC747350B</ActionId>
+				</FileAction>
+				<FileAction
+					type="com.cordys.entity.buildingblocks.file.FileAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9dee69793652">
+					<DocumentID>B1D641A0-429D-3355-B619-188FDAD6B3E0</DocumentID>
+					<Name>CancelSignatureRequest</Name>
+					<Description>CancelSignatureRequest</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:29.912</CreationDate>
+					<Notes/>
+					<ActionDisplayName>cancelSignatureRequest</ActionDisplayName>
+					<ActionId>8C16454BC921A1ED937587A98E84B50B</ActionId>
+				</FileAction>
+				<FileAction
+					type="com.cordys.entity.buildingblocks.file.FileAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9dee69f63652">
+					<DocumentID>A99B3886-2526-33DC-BD73-68A19A796231</DocumentID>
+					<Name>GetSignatureStatus</Name>
+					<Description>GetSignatureStatus</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:38.865</CreationDate>
+					<Notes/>
+					<ActionDisplayName>getSignatureStatus</ActionDisplayName>
+					<ActionId>8C16454BC921A1ED9375A10960C0F50B</ActionId>
+				</FileAction>
 			</OwnedActions>
 			<Properties>
 				<Property
@@ -1659,6 +1728,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1761,6 +1831,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>4000</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1812,6 +1883,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>512</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1979,6 +2051,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>

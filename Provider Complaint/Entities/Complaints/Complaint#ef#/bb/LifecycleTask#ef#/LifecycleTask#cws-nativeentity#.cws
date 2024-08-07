@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -573,7 +575,7 @@
 		</IdentityBuildingBlock>
 		<InboxTaskBuildingBlock
 			type="com.cordys.entity.buildingblocks.inboxtask.InboxTaskBuildingBlock"
-			typeVersion="F3A963B1-C20D-47AF-BE05-E4B36D0EC3B4"
+			typeVersion="33186206-7B8F-4F57-A470-70D2CE850F9A"
 			RuntimeDocumentID="90B11C8A-3947-11E5-F7F0-5406E6CE7FCB">
 			<DocumentID>005056A5-1B45-A1EB-B222-96065D122324</DocumentID>
 			<Name>Task</Name>
@@ -763,6 +765,16 @@
 					<CreationDate>2021-06-08T18:51:01.674</CreationDate>
 					<Notes/>
 				</InboxStaticAction>
+				<InboxStaticAction
+					type="com.cordys.entity.buildingblocks.inboxtask.InboxStaticAction"
+					RuntimeDocumentID="E73A5E6AAE7241C7B42F04FD94EC80AC">
+					<DocumentID>A4DF7D87-2427-3CC3-A458-17BDF0598B9A</DocumentID>
+					<Name>Acknowledge</Name>
+					<Description>Acknowledge</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:12.77</CreationDate>
+					<Notes/>
+				</InboxStaticAction>
 			</OwnedActions>
 			<Properties>
 				<Property
@@ -822,6 +834,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -891,6 +904,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1013,7 +1027,8 @@
 													<Notes/>
 													<DeveloperText>Null</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C28E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C28E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1051,7 +1066,8 @@
 													<Notes/>
 													<DeveloperText>User</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C26E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C26E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1089,7 +1105,8 @@
 													<Notes/>
 													<DeveloperText>Role</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C24E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C24E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1127,7 +1144,8 @@
 													<Notes/>
 													<DeveloperText>Team</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C22E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C22E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1165,7 +1183,8 @@
 													<Notes/>
 													<DeveloperText>Worklist</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C20E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C20E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1245,6 +1264,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1314,6 +1334,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1383,6 +1404,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1452,6 +1474,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1521,6 +1544,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1590,6 +1614,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>100</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1659,6 +1684,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1728,6 +1754,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1797,6 +1824,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>100</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1866,6 +1894,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -1988,7 +2017,8 @@
 													<Notes/>
 													<DeveloperText>Null</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33C28E324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33C28E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2026,7 +2056,8 @@
 													<Notes/>
 													<DeveloperText>Created</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AFF5-D0533AE5E324"
+														<uri
+															id="005056A5-1B45-A1EB-AFF5-D0533AE5E324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2064,7 +2095,8 @@
 													<Notes/>
 													<DeveloperText>Assigned</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7F76324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7F76324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2102,7 +2134,8 @@
 													<Notes/>
 													<DeveloperText>InProgress</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7F56324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7F56324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2140,7 +2173,8 @@
 													<Notes/>
 													<DeveloperText>Suspended</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-32E33BE46324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-32E33BE46324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2178,7 +2212,8 @@
 													<Notes/>
 													<DeveloperText>Completed</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7F16324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7F16324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2216,7 +2251,8 @@
 													<Notes/>
 													<DeveloperText>Failed</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7EF6324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7EF6324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2254,7 +2290,8 @@
 													<Notes/>
 													<DeveloperText>Paused</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7ED6324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7ED6324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2292,7 +2329,8 @@
 													<Notes/>
 													<DeveloperText>Obsolete</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7EB6324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7EB6324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2330,7 +2368,8 @@
 													<Notes/>
 													<DeveloperText>Error</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7E96324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7E96324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2368,7 +2407,8 @@
 													<Notes/>
 													<DeveloperText>Internal_Pause</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-B21F-34AEA7E76324"
+														<uri
+															id="005056A5-1B45-A1EB-B21F-34AEA7E76324"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2401,7 +2441,7 @@
 					<CreationDate>2021-06-08T18:51:01.627</CreationDate>
 					<Notes/>
 					<ConflictLevel>None</ConflictLevel>
-					<DataType>Decimal</DataType>
+					<DataType>IntegerValueList</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
 					<IsComputedProperty>false</IsComputedProperty>
@@ -2435,30 +2475,154 @@
 						</TranslatableText>
 					</DisplayName>
 					<OwnedTypeDefinition>
-						<DecimalPropertyDefinition
-							type="com.cordys.entity.core.typesystem.primitives.number.DecimalPropertyDefinition"
-							typeVersion="4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
-							RuntimeDocumentID="005056A5-1B45-A1EB-B222-96065D486324">
-							<DocumentID>005056A5-1B45-A1EB-B222-96065D482324</DocumentID>
-							<Name>005056A5-1B45-A1EB-B222-96065D482324</Name>
-							<Description>005056A5-1B45-A1EB-B222-96065D482324</Description>
-							<CreatedBy>dkhoyi@solu-soft.com</CreatedBy>
-							<CreationDate>2021-06-08T18:51:01.659</CreationDate>
+						<IntegerEnumPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.staticEnum.IntegerEnumPropertyDefinition"
+							typeVersion="005056C0-0008-11E6-ECD4-9ED50A5ADB27 4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f5aeb652">
+							<DocumentID>7E69B273-5D6F-3D02-BEA2-BF1C635C7168</DocumentID>
+							<Name>7E69B273-5D6F-3D02-BEA2-BF1C635C7168</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:09.572</CreationDate>
 							<Notes/>
 							<DefaultValue></DefaultValue>
-							<DigitsLeftOfDecimal>18</DigitsLeftOfDecimal>
-							<DigitsRightOfDecimal>0</DigitsRightOfDecimal>
-							<Max></Max>
-							<Min></Min>
+							<IsEnumerationSorted>false</IsEnumerationSorted>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
+							<DefaultEnum/>
+							<Enums/>
 							<Type/>
-						</DecimalPropertyDefinition>
+							<ValuesDefinition>
+								<StaticIntegerEnumSet
+									type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnumSet"
+									RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f69c3652">
+									<DocumentID>5212BB1C-9419-3E7C-8C60-F43C35DA6DB0</DocumentID>
+									<Name>5212BB1C-9419-3E7C-8C60-F43C35DA6DB0</Name>
+									<Description/>
+									<CreatedBy>sysadmin</CreatedBy>
+									<CreationDate>2024-08-07T11:25:19.171</CreationDate>
+									<Notes/>
+									<DefaultEnum/>
+									<Enums>
+										<StaticIntegerEnum
+											type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnum"
+											typeVersion="005056C0-0008-11E6-ECD4-A00528D1BB27"
+											RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f73eb652">
+											<DocumentID>1EC91EA2-37EF-367B-94FD-D6AF76ADE2AE</DocumentID>
+											<Name>1EC91EA2-37EF-367B-94FD-D6AF76ADE2AE</Name>
+											<Description/>
+											<CreatedBy>sysadmin</CreatedBy>
+											<CreationDate>2024-08-07T11:25:11.698</CreationDate>
+											<Notes/>
+											<IsNullEntry>false</IsNullEntry>
+											<Value>1</Value>
+											<Icon/>
+											<PropertyDefinition/>
+											<StaticEnumSet>
+												<uri
+													id="5212BB1C-9419-3E7C-8C60-F43C35DA6DB0"
+												/>
+											</StaticEnumSet>
+											<ValueDisplayName>
+												<TranslatableText
+													type="com.cordys.translation.TranslatableText"
+													typeVersion="FC58ED95-5D9A-4D1D-9A84-8D03E2528B67"
+													RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f7c83652">
+													<DocumentID>82AC628A-26FC-32E6-83B1-6910EB636292</DocumentID>
+													<Name>82AC628A-26FC-32E6-83B1-6910EB636292</Name>
+													<Description/>
+													<CreatedBy>sysadmin</CreatedBy>
+													<CreationDate>2024-08-07T11:25:26.689</CreationDate>
+													<Notes/>
+													<DeveloperText>Low</DeveloperText>
+													<Identifier/>
+												</TranslatableText>
+											</ValueDisplayName>
+										</StaticIntegerEnum>
+										<StaticIntegerEnum
+											type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnum"
+											typeVersion="005056C0-0008-11E6-ECD4-A00528D1BB27"
+											RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f8363652">
+											<DocumentID>DEC57AC0-1A54-3AC0-B8A2-17E2E0B1F601</DocumentID>
+											<Name>DEC57AC0-1A54-3AC0-B8A2-17E2E0B1F601</Name>
+											<Description/>
+											<CreatedBy>sysadmin</CreatedBy>
+											<CreationDate>2024-08-07T11:25:08.456</CreationDate>
+											<Notes/>
+											<IsNullEntry>false</IsNullEntry>
+											<Value>5</Value>
+											<Icon/>
+											<PropertyDefinition/>
+											<StaticEnumSet>
+												<uri
+													id="5212BB1C-9419-3E7C-8C60-F43C35DA6DB0"
+												/>
+											</StaticEnumSet>
+											<ValueDisplayName>
+												<TranslatableText
+													type="com.cordys.translation.TranslatableText"
+													typeVersion="FC58ED95-5D9A-4D1D-9A84-8D03E2528B67"
+													RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f87eb652">
+													<DocumentID>9E2B0EF0-B153-3A6F-BC2D-B4EE963CA227</DocumentID>
+													<Name>9E2B0EF0-B153-3A6F-BC2D-B4EE963CA227</Name>
+													<Description/>
+													<CreatedBy>sysadmin</CreatedBy>
+													<CreationDate>2024-08-07T11:25:43.101</CreationDate>
+													<Notes/>
+													<DeveloperText>High</DeveloperText>
+													<Identifier/>
+												</TranslatableText>
+											</ValueDisplayName>
+										</StaticIntegerEnum>
+										<StaticIntegerEnum
+											type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnum"
+											typeVersion="005056C0-0008-11E6-ECD4-A00528D1BB27"
+											RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f905b652">
+											<DocumentID>836B872E-E3DD-3B73-B5D2-62EFF8E67BE5</DocumentID>
+											<Name>836B872E-E3DD-3B73-B5D2-62EFF8E67BE5</Name>
+											<Description/>
+											<CreatedBy>sysadmin</CreatedBy>
+											<CreationDate>2024-08-07T11:25:33.852</CreationDate>
+											<Notes/>
+											<IsNullEntry>false</IsNullEntry>
+											<Value>3</Value>
+											<Icon/>
+											<PropertyDefinition/>
+											<StaticEnumSet>
+												<uri
+													id="5212BB1C-9419-3E7C-8C60-F43C35DA6DB0"
+												/>
+											</StaticEnumSet>
+											<ValueDisplayName>
+												<TranslatableText
+													type="com.cordys.translation.TranslatableText"
+													typeVersion="FC58ED95-5D9A-4D1D-9A84-8D03E2528B67"
+													RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514f9763652">
+													<DocumentID>569F84E6-5A8D-3216-A521-0734C70509A4</DocumentID>
+													<Name>569F84E6-5A8D-3216-A521-0734C70509A4</Name>
+													<Description/>
+													<CreatedBy>sysadmin</CreatedBy>
+													<CreationDate>2024-08-07T11:25:11.681</CreationDate>
+													<Notes/>
+													<DeveloperText>Normal</DeveloperText>
+													<Identifier/>
+												</TranslatableText>
+											</ValueDisplayName>
+										</StaticIntegerEnum>
+									</Enums>
+									<PropertyDefinition>
+										<uri
+											id="7E69B273-5D6F-3D02-BEA2-BF1C635C7168"
+										/>
+									</PropertyDefinition>
+								</StaticIntegerEnumSet>
+							</ValuesDefinition>
+						</IntegerEnumPropertyDefinition>
 					</OwnedTypeDefinition>
 					<Tooltip/>
 					<TypeDefinition>
 						<uri
-							id="005056A5-1B45-A1EB-B222-96065D482324"
+							id="7E69B273-5D6F-3D02-BEA2-BF1C635C7168"
 						/>
 					</TypeDefinition>
 				</Property>
@@ -2918,6 +3082,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -2987,6 +3152,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3056,6 +3222,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>1000</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3125,6 +3292,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>32</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3265,6 +3433,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>32</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3334,6 +3503,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>2000</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3403,6 +3573,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3541,6 +3712,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3748,6 +3920,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3883,6 +4056,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -3952,6 +4126,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4021,6 +4196,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4090,6 +4266,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>50</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4159,6 +4336,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4184,7 +4362,7 @@
 					<DataType>Text</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
-					<IsComputedProperty>true</IsComputedProperty>
+					<IsComputedProperty>false</IsComputedProperty>
 					<IsReadOnly>false</IsReadOnly>
 					<IsRequired>false</IsRequired>
 					<IsValueUnique>false</IsValueUnique>
@@ -4228,6 +4406,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4253,7 +4432,7 @@
 					<DataType>Text</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
-					<IsComputedProperty>true</IsComputedProperty>
+					<IsComputedProperty>false</IsComputedProperty>
 					<IsReadOnly>false</IsReadOnly>
 					<IsRequired>false</IsRequired>
 					<IsValueUnique>false</IsValueUnique>
@@ -4297,6 +4476,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4322,7 +4502,7 @@
 					<DataType>Text</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
-					<IsComputedProperty>true</IsComputedProperty>
+					<IsComputedProperty>false</IsComputedProperty>
 					<IsReadOnly>false</IsReadOnly>
 					<IsRequired>false</IsRequired>
 					<IsValueUnique>false</IsValueUnique>
@@ -4366,6 +4546,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4391,7 +4572,7 @@
 					<DataType>Text</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
-					<IsComputedProperty>true</IsComputedProperty>
+					<IsComputedProperty>false</IsComputedProperty>
 					<IsReadOnly>false</IsReadOnly>
 					<IsRequired>false</IsRequired>
 					<IsValueUnique>false</IsValueUnique>
@@ -4435,6 +4616,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>250</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4444,6 +4626,199 @@
 					<TypeDefinition>
 						<uri
 							id="005056A5-1B45-A1EB-B222-96065D80A324"
+						/>
+					</TypeDefinition>
+				</Property>
+				<Property
+					type="com.cordys.entity.core.structure.property.Property"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514ab293652">
+					<DocumentID>0242ac13-0004-a1ef-952b-9514ab103652</DocumentID>
+					<Name>AcknowledgeStatus</Name>
+					<Description>ACKNOWLEDGE_STATUS</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:07.313</CreationDate>
+					<Notes/>
+					<ConflictLevel>None</ConflictLevel>
+					<DataType>IntegerValueList</DataType>
+					<ExposeForReuse>false</ExposeForReuse>
+					<Expression></Expression>
+					<IsComputedProperty>false</IsComputedProperty>
+					<IsReadOnly>true</IsReadOnly>
+					<IsRequired>false</IsRequired>
+					<IsValueUnique>false</IsValueUnique>
+					<StaticProperty>23192ED07CE24D239041B67F2285A97B</StaticProperty>
+					<Updatability>ReadOnly</Updatability>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-B222-96065D122324"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<OwnedTypeDefinition>
+						<IntegerEnumPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.staticEnum.IntegerEnumPropertyDefinition"
+							typeVersion="005056C0-0008-11E6-ECD4-9ED50A5ADB27 4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514adf1b652">
+							<DocumentID>74B12631-15CF-3159-B3BE-BD77FEAB237B</DocumentID>
+							<Name>74B12631-15CF-3159-B3BE-BD77FEAB237B</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:21.182</CreationDate>
+							<Notes/>
+							<DefaultValue></DefaultValue>
+							<IsEnumerationSorted>false</IsEnumerationSorted>
+							<lowerBound>1</lowerBound>
+							<upperBound>1</upperBound>
+							<DefaultEnum/>
+							<Enums/>
+							<Type/>
+							<ValuesDefinition>
+								<StaticIntegerEnumSet
+									type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnumSet"
+									RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514ae96b652">
+									<DocumentID>D31D6E41-AFEE-36D8-A7AB-A90233C14154</DocumentID>
+									<Name>D31D6E41-AFEE-36D8-A7AB-A90233C14154</Name>
+									<Description/>
+									<CreatedBy>sysadmin</CreatedBy>
+									<CreationDate>2024-08-07T11:25:24.47</CreationDate>
+									<Notes/>
+									<DefaultEnum/>
+									<Enums>
+										<StaticIntegerEnum
+											type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnum"
+											typeVersion="005056C0-0008-11E6-ECD4-A00528D1BB27"
+											RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514af27b652">
+											<DocumentID>1EB96E7B-DAC2-3464-A8CD-35FE87330BBC</DocumentID>
+											<Name>1EB96E7B-DAC2-3464-A8CD-35FE87330BBC</Name>
+											<Description/>
+											<CreatedBy>sysadmin</CreatedBy>
+											<CreationDate>2024-08-07T11:25:36.316</CreationDate>
+											<Notes/>
+											<IsNullEntry>false</IsNullEntry>
+											<Value>1</Value>
+											<Icon/>
+											<PropertyDefinition/>
+											<StaticEnumSet>
+												<uri
+													id="D31D6E41-AFEE-36D8-A7AB-A90233C14154"
+												/>
+											</StaticEnumSet>
+											<ValueDisplayName>
+												<TranslatableText
+													type="com.cordys.translation.TranslatableText"
+													typeVersion="FC58ED95-5D9A-4D1D-9A84-8D03E2528B67"
+													RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514affeb652">
+													<DocumentID>1EC83DA7-B0CE-3B7A-B099-91E3C459761C</DocumentID>
+													<Name>1EC83DA7-B0CE-3B7A-B099-91E3C459761C</Name>
+													<Description/>
+													<CreatedBy>sysadmin</CreatedBy>
+													<CreationDate>2024-08-07T11:25:10.647</CreationDate>
+													<Notes/>
+													<DeveloperText>Pending</DeveloperText>
+													<Identifier/>
+												</TranslatableText>
+											</ValueDisplayName>
+										</StaticIntegerEnum>
+										<StaticIntegerEnum
+											type="com.cordys.entity.core.typesystem.primitives.staticEnum.StaticIntegerEnum"
+											typeVersion="005056C0-0008-11E6-ECD4-A00528D1BB27"
+											RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514b076b652">
+											<DocumentID>C8269D39-7105-3657-8FD2-18193F376861</DocumentID>
+											<Name>C8269D39-7105-3657-8FD2-18193F376861</Name>
+											<Description/>
+											<CreatedBy>sysadmin</CreatedBy>
+											<CreationDate>2024-08-07T11:25:26.689</CreationDate>
+											<Notes/>
+											<IsNullEntry>false</IsNullEntry>
+											<Value>2</Value>
+											<Icon/>
+											<PropertyDefinition/>
+											<StaticEnumSet>
+												<uri
+													id="D31D6E41-AFEE-36D8-A7AB-A90233C14154"
+												/>
+											</StaticEnumSet>
+											<ValueDisplayName>
+												<TranslatableText
+													type="com.cordys.translation.TranslatableText"
+													typeVersion="FC58ED95-5D9A-4D1D-9A84-8D03E2528B67"
+													RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514b0bf3652">
+													<DocumentID>0A69C775-7CBD-3674-BB52-83F08B5CCA6F</DocumentID>
+													<Name>0A69C775-7CBD-3674-BB52-83F08B5CCA6F</Name>
+													<Description/>
+													<CreatedBy>sysadmin</CreatedBy>
+													<CreationDate>2024-08-07T11:25:38.902</CreationDate>
+													<Notes/>
+													<DeveloperText>Completed</DeveloperText>
+													<Identifier/>
+												</TranslatableText>
+											</ValueDisplayName>
+										</StaticIntegerEnum>
+									</Enums>
+									<PropertyDefinition>
+										<uri
+											id="74B12631-15CF-3159-B3BE-BD77FEAB237B"
+										/>
+									</PropertyDefinition>
+								</StaticIntegerEnumSet>
+							</ValuesDefinition>
+						</IntegerEnumPropertyDefinition>
+					</OwnedTypeDefinition>
+					<Tooltip/>
+					<TypeDefinition>
+						<uri
+							id="74B12631-15CF-3159-B3BE-BD77FEAB237B"
+						/>
+					</TypeDefinition>
+				</Property>
+				<Property
+					type="com.cordys.entity.core.structure.property.Property"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514d335b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-9514d31cb652</DocumentID>
+					<Name>IsPrivateTask</Name>
+					<Description>IsPrivateTask</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:09.482</CreationDate>
+					<Notes/>
+					<ConflictLevel>None</ConflictLevel>
+					<DataType>Integer</DataType>
+					<ExposeForReuse>false</ExposeForReuse>
+					<Expression></Expression>
+					<IsComputedProperty>false</IsComputedProperty>
+					<IsReadOnly>true</IsReadOnly>
+					<IsRequired>false</IsRequired>
+					<IsValueUnique>false</IsValueUnique>
+					<StaticProperty>540099A5DFAF440E94C2D60313ED04DB</StaticProperty>
+					<Updatability>ReadOnly</Updatability>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-B222-96065D122324"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<OwnedTypeDefinition>
+						<IntegerPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.number.IntegerPropertyDefinition"
+							typeVersion="4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-9514d4693652">
+							<DocumentID>0242ac13-0004-a1ef-952b-9514d44db652</DocumentID>
+							<Name>0242ac13-0004-a1ef-952b-9514d44db652</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:27.811</CreationDate>
+							<Notes/>
+							<DefaultValue></DefaultValue>
+							<Max></Max>
+							<Min></Min>
+							<lowerBound>1</lowerBound>
+							<upperBound>1</upperBound>
+							<Type/>
+						</IntegerPropertyDefinition>
+					</OwnedTypeDefinition>
+					<Tooltip/>
+					<TypeDefinition>
+						<uri
+							id="0242ac13-0004-a1ef-952b-9514d44db652"
 						/>
 					</TypeDefinition>
 				</Property>

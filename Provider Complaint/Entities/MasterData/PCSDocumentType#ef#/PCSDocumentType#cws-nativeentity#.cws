@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -517,6 +519,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>512</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -590,6 +593,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>128</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -720,7 +724,8 @@
 													<Notes/>
 													<DeveloperText>Yes</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A7BB-EC9223C66320"
+														<uri
+															id="005056A5-1B45-A1EB-A7BB-EC9223C66320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -758,7 +763,8 @@
 													<Notes/>
 													<DeveloperText>No</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A7BB-EC9223C76320"
+														<uri
+															id="005056A5-1B45-A1EB-A7BB-EC9223C76320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1373,6 +1379,7 @@
 					<HistoryLogReferenceName>PCSDocumentType_HistoryLog</HistoryLogReferenceName>
 					<OnDeleteAction>0</OnDeleteAction>
 					<RecordAccessEvents>false</RecordAccessEvents>
+					<ShowCumulativeAudit>false</ShowCumulativeAudit>
 					<DisplayName/>
 					<HistoryLog>
 						<uri
@@ -1399,6 +1406,7 @@
 		</HistoryBuildingBlock>
 		<TrackingBuildingBlock
 			type="com.cordys.entity.buildingblocks.tracking.TrackingBuildingBlock"
+			typeVersion="3879939F-3AE9-48DF-A070-A7056C85FB88"
 			RuntimeDocumentID="005056A5-1B45-A1EB-AB09-0B28D682E321">
 			<DocumentID>005056A5-1B45-A1EB-AB09-0B28D682A321</DocumentID>
 			<Name>Tracking</Name>
@@ -1413,6 +1421,32 @@
 			</Entity>
 			<InlinedEntities/>
 			<Original/>
+			<OwnedActions>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-d912a706b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-d912a6f2b652</DocumentID>
+					<Name>MarkAsRead</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:10.604</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsRead</ActionDisplayName>
+					<ActionId>F53249C9B9774D49A052D16FBB9D7624</ActionId>
+				</TrackingAction>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-d912a77c3652">
+					<DocumentID>0242ac13-0004-a1ef-952b-d912a76d3652</DocumentID>
+					<Name>MarkAsUnread</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:33.863</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsUnread</ActionDisplayName>
+					<ActionId>B3EC8D7188F94F4A90C73D7378BEF9A9</ActionId>
+				</TrackingAction>
+			</OwnedActions>
 			<Properties>
 				<Property
 					type="com.cordys.entity.core.structure.property.Property"
@@ -1692,10 +1726,65 @@
 						/>
 					</Target>
 				</Relationship>
+				<Relationship
+					type="com.cordys.entity.core.structure.relationship.Relationship"
+					typeVersion="17A97EEB-DDB4-477D-8C9F-C9238015F2A2"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-d912a4d43652">
+					<DocumentID>7BA9FDC7-7252-3799-AA53-067F1CE3AAE2</DocumentID>
+					<Name>ReadBy</Name>
+					<Description>ReadBy</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:08.387</CreationDate>
+					<Notes/>
+					<ExposeForReuse>false</ExposeForReuse>
+					<HasFK>false</HasFK>
+					<MaxCardinality>-1</MaxCardinality>
+					<MinCardinality>0</MinCardinality>
+					<OwnsJoinTable>true</OwnsJoinTable>
+					<RelationshipType>ToPeer</RelationshipType>
+					<RestrictDeleteTarget>false</RestrictDeleteTarget>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-AB09-0B28D682A321"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<ForeignKeyProperties>
+						<uri
+							id="7B0F3112-C48C-36FC-A1A2-A4C4C9DE6B0E"
+						/>
+					</ForeignKeyProperties>
+					<Inverse/>
+					<Original/>
+					<ReferringProperties>
+						<ReferringProperty
+							type="com.cordys.entity.core.structure.relationship.ReferringProperty"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-d912a6233652">
+							<DocumentID>7B0F3112-C48C-36FC-A1A2-A4C4C9DE6B0E</DocumentID>
+							<Name>ReadBy_Id</Name>
+							<Description>ReadBy_Id</Description>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:40.823</CreationDate>
+							<Notes/>
+							<NameIsExternallyManaged>false</NameIsExternallyManaged>
+							<TargetProperty>
+								<uri
+									id="F8B156B4-FF8F-11E6-E6F1-BB7823D79319"
+								/>
+							</TargetProperty>
+						</ReferringProperty>
+					</ReferringProperties>
+					<Target>
+						<uri
+							id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+						/>
+					</Target>
+				</Relationship>
 			</Relationships>
 			<Tracking>
 				<Tracking
 					type="com.cordys.entity.buildingblocks.tracking.Tracking"
+					typeVersion="EEA67FA8-049B-498D-A635-D0A9B48E2456"
 					RuntimeDocumentID="005056A5-1B45-A1EB-AB09-0B28D6826321">
 					<DocumentID>005056A5-1B45-A1EB-AB09-0B28D6822321</DocumentID>
 					<Name>Tracking</Name>
@@ -1704,6 +1793,7 @@
 					<CreationDate>2021-05-03T15:29:55.286</CreationDate>
 					<Notes/>
 					<ParentAlso>false</ParentAlso>
+					<ReadBy>false</ReadBy>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-AB09-0B28D682A321"
@@ -1714,7 +1804,7 @@
 		</TrackingBuildingBlock>
 		<SecurityBuildingBlock
 			type="com.cordys.entity.buildingblocks.security.SecurityBuildingBlock"
-			typeVersion="E6399B50-B4CA-4A3B-B58F-BD56B1BDFEA2"
+			typeVersion="6294039D-E23A-48B1-8047-1C7EFC55AF03"
 			RuntimeDocumentID="30a21f26-6e73-320d-99af-581a84f1b87b">
 			<DocumentID>005056A5-1B45-A1EB-AB09-0B28D6746321</DocumentID>
 			<Name>Security</Name>
@@ -4586,6 +4676,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>

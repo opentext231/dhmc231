@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -578,6 +580,7 @@
 					<HistoryLogReferenceName>GeneralInquiry_HistoryLog</HistoryLogReferenceName>
 					<OnDeleteAction>0</OnDeleteAction>
 					<RecordAccessEvents>false</RecordAccessEvents>
+					<ShowCumulativeAudit>false</ShowCumulativeAudit>
 					<DisplayName/>
 					<HistoryLog>
 						<uri
@@ -604,6 +607,7 @@
 		</HistoryBuildingBlock>
 		<TrackingBuildingBlock
 			type="com.cordys.entity.buildingblocks.tracking.TrackingBuildingBlock"
+			typeVersion="3879939F-3AE9-48DF-A070-A7056C85FB88"
 			RuntimeDocumentID="005056A5-1B45-A1EB-A8B6-A4801F176320">
 			<DocumentID>005056A5-1B45-A1EB-A8B6-A4801F172320</DocumentID>
 			<Name>Tracking</Name>
@@ -618,6 +622,32 @@
 			</Entity>
 			<InlinedEntities/>
 			<Original/>
+			<OwnedActions>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-c4649c97b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-c4649c83b652</DocumentID>
+					<Name>MarkAsRead</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:07.328</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsRead</ActionDisplayName>
+					<ActionId>F53249C9B9774D49A052D16FBB9D7624</ActionId>
+				</TrackingAction>
+				<TrackingAction
+					type="com.cordys.entity.buildingblocks.tracking.TrackingAction"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-c4649d14b652">
+					<DocumentID>0242ac13-0004-a1ef-952b-c4649d05b652</DocumentID>
+					<Name>MarkAsUnread</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:41.939</CreationDate>
+					<Notes/>
+					<ActionDisplayName>MarkAsUnread</ActionDisplayName>
+					<ActionId>B3EC8D7188F94F4A90C73D7378BEF9A9</ActionId>
+				</TrackingAction>
+			</OwnedActions>
 			<Properties>
 				<Property
 					type="com.cordys.entity.core.structure.property.Property"
@@ -897,10 +927,65 @@
 						/>
 					</Target>
 				</Relationship>
+				<Relationship
+					type="com.cordys.entity.core.structure.relationship.Relationship"
+					typeVersion="17A97EEB-DDB4-477D-8C9F-C9238015F2A2"
+					RuntimeDocumentID="0242ac13-0004-a1ef-952b-c444bddcb652">
+					<DocumentID>2C692FD8-763A-3E6B-81A1-92238BDBB1DC</DocumentID>
+					<Name>ReadBy</Name>
+					<Description>ReadBy</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-07T11:25:11.737</CreationDate>
+					<Notes/>
+					<ExposeForReuse>false</ExposeForReuse>
+					<HasFK>false</HasFK>
+					<MaxCardinality>-1</MaxCardinality>
+					<MinCardinality>0</MinCardinality>
+					<OwnsJoinTable>true</OwnsJoinTable>
+					<RelationshipType>ToPeer</RelationshipType>
+					<RestrictDeleteTarget>false</RestrictDeleteTarget>
+					<BuildingBlock>
+						<uri
+							id="005056A5-1B45-A1EB-A8B6-A4801F172320"
+						/>
+					</BuildingBlock>
+					<DisplayName/>
+					<ForeignKeyProperties>
+						<uri
+							id="4644FA43-901B-3E86-8925-F631E5611E37"
+						/>
+					</ForeignKeyProperties>
+					<Inverse/>
+					<Original/>
+					<ReferringProperties>
+						<ReferringProperty
+							type="com.cordys.entity.core.structure.relationship.ReferringProperty"
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-c4649b233652">
+							<DocumentID>4644FA43-901B-3E86-8925-F631E5611E37</DocumentID>
+							<Name>ReadBy_Id</Name>
+							<Description>ReadBy_Id</Description>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:35.254</CreationDate>
+							<Notes/>
+							<NameIsExternallyManaged>false</NameIsExternallyManaged>
+							<TargetProperty>
+								<uri
+									id="F8B156B4-FF8F-11E6-E6F1-BB7823D79319"
+								/>
+							</TargetProperty>
+						</ReferringProperty>
+					</ReferringProperties>
+					<Target>
+						<uri
+							id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+						/>
+					</Target>
+				</Relationship>
 			</Relationships>
 			<Tracking>
 				<Tracking
 					type="com.cordys.entity.buildingblocks.tracking.Tracking"
+					typeVersion="EEA67FA8-049B-498D-A635-D0A9B48E2456"
 					RuntimeDocumentID="005056A5-1B45-A1EB-A8B6-A4801F16E320">
 					<DocumentID>005056A5-1B45-A1EB-A8B6-A4801F16A320</DocumentID>
 					<Name>Tracking</Name>
@@ -909,6 +994,7 @@
 					<CreationDate>2021-04-21T19:53:22.284</CreationDate>
 					<Notes/>
 					<ParentAlso>false</ParentAlso>
+					<ReadBy>false</ReadBy>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-A8B6-A4801F172320"
@@ -1840,6 +1926,7 @@
 			<Content>
 				<Content
 					type="com.cordys.entity.buildingblocks.content.Content"
+					typeVersion="98fa9b06-188b-a1ed-b293-670a6f3b105f"
 					RuntimeDocumentID="005056A5-1B45-A1EB-A8B6-B59E72F62320">
 					<DocumentID>005056A5-1B45-A1EB-A8B6-B59E72F5E320</DocumentID>
 					<Name>Content</Name>
@@ -1849,12 +1936,14 @@
 					<Notes/>
 					<MaxNoOfFiles></MaxNoOfFiles>
 					<RootPath>${system.organization}/${solution.name}/${contentbuildingblock.path}</RootPath>
+					<SaveSignedDocumentAs>NewVersion</SaveSignedDocumentAs>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-A8B6-B59E72F66320"
 						/>
 					</BuildingBlock>
 					<DisplayName/>
+					<SignedDocumentsLocation/>
 				</Content>
 			</Content>
 			<Entity>
@@ -2116,7 +2205,8 @@
 													<Notes/>
 													<DeveloperText>Individual</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8E9-65A06CD7E320"
+														<uri
+															id="005056A5-1B45-A1EB-A8E9-65A06CD7E320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2154,7 +2244,8 @@
 													<Notes/>
 													<DeveloperText>Organization</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A8E9-65A06CD66320"
+														<uri
+															id="005056A5-1B45-A1EB-A8E9-65A06CD66320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -2234,6 +2325,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2307,6 +2399,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2380,6 +2473,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2453,6 +2547,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2526,6 +2621,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2599,6 +2695,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2832,6 +2929,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2905,6 +3003,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -2978,6 +3077,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3051,6 +3151,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3124,6 +3225,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern>99999</Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3197,6 +3299,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern>9999</Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3270,6 +3373,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3343,6 +3447,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern>(999) 999 9999</Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3489,6 +3594,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3632,6 +3738,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -3705,6 +3812,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -4031,7 +4139,8 @@
 													<Notes/>
 													<DeveloperText>New</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C7FE2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C7FE2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -4069,7 +4178,8 @@
 													<Notes/>
 													<DeveloperText>In Progress</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA7A-26F11080A320"
+														<uri
+															id="005056A5-1B45-A1EB-AA7A-26F11080A320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -4107,7 +4217,8 @@
 													<Notes/>
 													<DeveloperText>Closed</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA7A-26F1107F2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA7A-26F1107F2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -4257,6 +4368,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>64</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -4330,6 +4442,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>100</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -4442,6 +4555,7 @@
 					<FormerAssignee>false</FormerAssignee>
 					<GroupAssignee>false</GroupAssignee>
 					<NewAssignee>false</NewAssignee>
+					<ShareInstanceRoleOnForward>false</ShareInstanceRoleOnForward>
 					<TriggerType>static</TriggerType>
 					<BuildingBlock>
 						<uri
@@ -4452,12 +4566,14 @@
 					<EntityExpression/>
 					<FormerAssigneeEmailTemplate/>
 					<GroupAssigneeEmailTemplate/>
+					<InstanceRoleOnForward/>
 					<NewAssigneeEmailTemplate/>
 					<Role>
 						<uri
 							id="005056A5-1B45-A1EB-A6F6-868EF4F66320"
 						/>
 					</Role>
+					<SharingBuildingBlock/>
 				</Assignee>
 			</Assignee>
 			<Entity>
@@ -4707,6 +4823,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -4738,7 +4855,7 @@
 		</TitleBuildingBlock>
 		<SecurityBuildingBlock
 			type="com.cordys.entity.buildingblocks.security.SecurityBuildingBlock"
-			typeVersion="E6399B50-B4CA-4A3B-B58F-BD56B1BDFEA2"
+			typeVersion="6294039D-E23A-48B1-8047-1C7EFC55AF03"
 			RuntimeDocumentID="82e15d84-db0c-3f1b-b602-2edb6fe43900">
 			<DocumentID>005056A5-1B45-A1EB-AA4B-C07BCB70A320</DocumentID>
 			<Name>Security</Name>
@@ -7379,7 +7496,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B991A320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -7400,7 +7517,7 @@
 											</condition>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="8448677b-37c4-405f-9300-d01803deb949"
 												/>
 											</right>
 										</ApplicableRight>
@@ -7424,7 +7541,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B9912320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -7445,7 +7562,7 @@
 											</condition>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="23fa589a-9822-449a-af3c-8b0ba726f709"
 												/>
 											</right>
 										</ApplicableRight>
@@ -7469,7 +7586,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B990A320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -7490,7 +7607,7 @@
 											</condition>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="da886ba6-1acb-411d-9dd8-bcef5ff6dcb3"
 												/>
 											</right>
 										</ApplicableRight>
@@ -7514,7 +7631,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B9902320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -7535,7 +7652,7 @@
 											</condition>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="544167ad-9f14-43ef-afa4-0ace5402a0a4"
 												/>
 											</right>
 										</ApplicableRight>
@@ -10009,7 +10126,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B991A320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -10026,7 +10143,7 @@
 											<condition/>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="8448677b-37c4-405f-9300-d01803deb949"
 												/>
 											</right>
 										</ApplicableRight>
@@ -10050,7 +10167,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B9912320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -10067,7 +10184,7 @@
 											<condition/>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="23fa589a-9822-449a-af3c-8b0ba726f709"
 												/>
 											</right>
 										</ApplicableRight>
@@ -10091,7 +10208,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B990A320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -10108,7 +10225,7 @@
 											<condition/>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="da886ba6-1acb-411d-9dd8-bcef5ff6dcb3"
 												/>
 											</right>
 										</ApplicableRight>
@@ -10132,7 +10249,7 @@
 									<Notes/>
 									<Model>
 										<uri
-											id="005056A5-1B45-A1EB-A9B4-42F1B9902320"
+											id="005056A5-1B45-A1EB-A9B4-42F1B992A320"
 										/>
 									</Model>
 									<applicableRights>
@@ -10149,7 +10266,7 @@
 											<condition/>
 											<right>
 												<uri
-													id="e57fa5e1-e36d-401e-8237-af4579c7582d"
+													id="544167ad-9f14-43ef-afa4-0ace5402a0a4"
 												/>
 											</right>
 										</ApplicableRight>
@@ -11859,7 +11976,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AA4C-111D26A3E320">
 											<DocumentID>005056A5-1B45-A1EB-AA4C-111D26A3A320</DocumentID>
 											<Name>IfNewOrAssignedToUserAndNotClosed</Name>
@@ -11898,30 +12015,45 @@
 													<Notes/>
 													<NumberOfIntermediateRelationships>1</NumberOfIntermediateRelationships>
 													<IntermediateRelationships>
-														<RelationshipReference	type="com.cordys.entity.core.objectpath.RelationshipReference"	RuntimeDocumentID="005056A5-1B45-A1EB-AE2D-F99D0304E324">	<DocumentID>005056A5-1B45-A1EB-AE2D-F99D0304A324</DocumentID>	<Name>005056A5-1B45-A1EB-AE2D-F99D0304A324</Name>	<Description>005056A5-1B45-A1EB-AE2D-F99D0304A324</Description>	<CreatedBy>hmehta@opentext.com</CreatedBy>	<CreationDate>2021-05-19T15:37:33.68</CreationDate>	<Notes/>	<Relationship>
-		<uri
-				id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
-		/>	</Relationship>
+														<RelationshipReference
+															type="com.cordys.entity.core.objectpath.RelationshipReference"
+															RuntimeDocumentID="005056A5-1B45-A1EB-AE2D-F99D0304E324">
+															<DocumentID>005056A5-1B45-A1EB-AE2D-F99D0304A324</DocumentID>
+															<Name>005056A5-1B45-A1EB-AE2D-F99D0304A324</Name>
+															<Description>005056A5-1B45-A1EB-AE2D-F99D0304A324</Description>
+															<CreatedBy>hmehta@opentext.com</CreatedBy>
+															<CreationDate>2021-05-19T15:37:33.68</CreationDate>
+															<Notes/>
+															<Relationship>
+	<uri
+			id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
+	/>
+															</Relationship>
 														</RelationshipReference>
 													</IntermediateRelationships>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
+														<uri
+															id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -11937,23 +12069,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+														<uri
+															id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
+														<uri
+															id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -11969,23 +12106,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-111D26A3A320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C8052320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C8052320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12005,7 +12147,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AA4C-F58F3FD26320">
 											<DocumentID>005056A5-1B45-A1EB-AA4C-F58F3FD22320</DocumentID>
 											<Name>NotDeleted_soft</Name>
@@ -12045,23 +12187,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-F58F3FD22320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-F58F3FD22320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA4C-C745D29D2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-C745D29D2320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12081,7 +12228,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AA4C-F58F3FCBE320">
 											<DocumentID>005056A5-1B45-A1EB-AA4C-F58F3FCBA320</DocumentID>
 											<Name>Deleted_soft</Name>
@@ -12121,23 +12268,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-F58F3FCBA320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-F58F3FCBA320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C8052320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C8052320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12153,23 +12305,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA4C-F58F3FCBA320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-F58F3FCBA320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA4C-C745D29D2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4C-C745D29D2320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12189,7 +12346,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AA7E-A4215D63A320">
 											<DocumentID>005056A5-1B45-A1EB-AA7E-A4215D636320</DocumentID>
 											<Name>AssignedToMe</Name>
@@ -12228,30 +12385,45 @@
 													<Notes/>
 													<NumberOfIntermediateRelationships>1</NumberOfIntermediateRelationships>
 													<IntermediateRelationships>
-														<RelationshipReference	type="com.cordys.entity.core.objectpath.RelationshipReference"	RuntimeDocumentID="005056A5-1B45-A1EB-AA7E-A4215D622320">	<DocumentID>005056A5-1B45-A1EB-AA7E-A4215D61E320</DocumentID>	<Name>005056A5-1B45-A1EB-AA7E-A4215D61E320</Name>	<Description>005056A5-1B45-A1EB-AA7E-A4215D61E320</Description>	<CreatedBy>hmehta@opentext.com</CreatedBy>	<CreationDate>2021-04-30T21:28:39.049</CreationDate>	<Notes/>	<Relationship>
-		<uri
-				id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
-		/>	</Relationship>
+														<RelationshipReference
+															type="com.cordys.entity.core.objectpath.RelationshipReference"
+															RuntimeDocumentID="005056A5-1B45-A1EB-AA7E-A4215D622320">
+															<DocumentID>005056A5-1B45-A1EB-AA7E-A4215D61E320</DocumentID>
+															<Name>005056A5-1B45-A1EB-AA7E-A4215D61E320</Name>
+															<Description>005056A5-1B45-A1EB-AA7E-A4215D61E320</Description>
+															<CreatedBy>hmehta@opentext.com</CreatedBy>
+															<CreationDate>2021-04-30T21:28:39.049</CreationDate>
+															<Notes/>
+															<Relationship>
+	<uri
+			id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
+	/>
+															</Relationship>
 														</RelationshipReference>
 													</IntermediateRelationships>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA7E-A4215D636320"
+														<uri
+															id="005056A5-1B45-A1EB-AA7E-A4215D636320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
+														<uri
+															id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12267,23 +12439,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AA7E-A4215D636320"
+														<uri
+															id="005056A5-1B45-A1EB-AA7E-A4215D636320"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+														<uri
+															id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
+														<uri
+															id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12303,7 +12480,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AB3C-39CF938CE321">
 											<DocumentID>005056A5-1B45-A1EB-AB3C-39CF938CA321</DocumentID>
 											<Name>AssignedToMeAndNotClosed</Name>
@@ -12343,23 +12520,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
+														<uri
+															id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C8052320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C8052320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12374,30 +12556,45 @@
 													<Notes/>
 													<NumberOfIntermediateRelationships>1</NumberOfIntermediateRelationships>
 													<IntermediateRelationships>
-														<RelationshipReference	type="com.cordys.entity.core.objectpath.RelationshipReference"	RuntimeDocumentID="005056A5-1B45-A1EB-AB3F-F1282AE9A321">	<DocumentID>005056A5-1B45-A1EB-AB3F-F1282AE96321</DocumentID>	<Name>005056A5-1B45-A1EB-AB3F-F1282AE96321</Name>	<Description>005056A5-1B45-A1EB-AB3F-F1282AE96321</Description>	<CreatedBy>hmehta@opentext.com</CreatedBy>	<CreationDate>2021-05-04T17:43:29.677</CreationDate>	<Notes/>	<Relationship>
-		<uri
-				id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
-		/>	</Relationship>
+														<RelationshipReference
+															type="com.cordys.entity.core.objectpath.RelationshipReference"
+															RuntimeDocumentID="005056A5-1B45-A1EB-AB3F-F1282AE9A321">
+															<DocumentID>005056A5-1B45-A1EB-AB3F-F1282AE96321</DocumentID>
+															<Name>005056A5-1B45-A1EB-AB3F-F1282AE96321</Name>
+															<Description>005056A5-1B45-A1EB-AB3F-F1282AE96321</Description>
+															<CreatedBy>hmehta@opentext.com</CreatedBy>
+															<CreationDate>2021-05-04T17:43:29.677</CreationDate>
+															<Notes/>
+															<Relationship>
+	<uri
+			id="005056A5-1B45-A1EB-A9B4-42F1B98F2320"
+	/>
+															</Relationship>
 														</RelationshipReference>
 													</IntermediateRelationships>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
+														<uri
+															id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
+														<uri
+															id="F8B156B4-FF8F-11E6-E6F1-BB7823D47319"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12413,23 +12610,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
+														<uri
+															id="005056A5-1B45-A1EB-AB3C-39CF938CA321"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
+														<uri
+															id="F8B156E1-0371-11E6-E9CB-0FBF3334DBBF"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
+														<uri
+															id="F8B156B4-FF8F-11E6-EE7E-B5B96C4B571A"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12449,7 +12651,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AB3F-F1282AE7E321">
 											<DocumentID>005056A5-1B45-A1EB-AB3F-F1282AE7A321</DocumentID>
 											<Name>NotClosed</Name>
@@ -12489,23 +12691,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AB3F-F1282AE7A321"
+														<uri
+															id="005056A5-1B45-A1EB-AB3F-F1282AE7A321"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C8052320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C8052320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12525,7 +12732,7 @@
 									<expression>
 										<EntityExpression
 											type="com.cordys.entity.services.entityexpression.EntityExpression"
-											typeVersion="B533CA05-04B9-4F23-AF1D-A322ED02052E"
+											typeVersion="0928EA4A-EDAC-431C-991B-48F29BCEF3C2"
 											RuntimeDocumentID="005056A5-1B45-A1EB-AD35-67A284DA6322">
 											<DocumentID>005056A5-1B45-A1EB-AD35-67A284DA2322</DocumentID>
 											<Name>Closed</Name>
@@ -12565,23 +12772,28 @@
 													<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 													<IntermediateRelationships/>
 													<Object>
-														<uri	id="005056A5-1B45-A1EB-AD35-67A284DA2322"
+														<uri
+															id="005056A5-1B45-A1EB-AD35-67A284DA2322"
 														/>
 													</Object>
 													<ObjectOwner>
-														<uri	id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
+														<uri
+															id="005056A5-1B45-A1EB-AA4B-C07BCB702320"
 														/>
 													</ObjectOwner>
 													<PathBegin>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</PathBegin>
 													<PathEnd>
-														<uri	id="005056A5-1B45-A1EB-AA77-95E0C8052320"
+														<uri
+															id="005056A5-1B45-A1EB-AA77-95E0C8052320"
 														/>
 													</PathEnd>
 													<RootOwner>
-														<uri	id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
+														<uri
+															id="005056A5-1B45-A1EB-A8B6-74DF3E266320"
 														/>
 													</RootOwner>
 												</PropertyObjectPath>
@@ -12603,7 +12815,7 @@
 		</SecurityBuildingBlock>
 		<EmailBuildingBlock
 			type="com.cordys.entity.buildingblocks.email.EmailBuildingBlock"
-			typeVersion="dff266a5-3514-446a-bce9-e1ee24736978"
+			typeVersion="CC3B6D68-6A37-4A70-B79F-D3F9-13CB329E"
 			RuntimeDocumentID="005056A5-1B45-A1EB-AA70-F4D8BD04E320">
 			<DocumentID>005056A5-1B45-A1EB-AA70-F4D8BD04A320</DocumentID>
 			<Name>Email</Name>
@@ -12614,7 +12826,7 @@
 			<Email>
 				<Email
 					type="com.cordys.entity.buildingblocks.email.Email"
-					typeVersion="70B3859A-6661-405A-915F-79AC52C92B04"
+					typeVersion="B59CF123-2383-49B2-8C3E-D8F323D8F3F8"
 					RuntimeDocumentID="005056A5-1B45-A1EB-AA70-F4D8BD046320">
 					<DocumentID>005056A5-1B45-A1EB-AA70-F4D8BD042320</DocumentID>
 					<Name>Email</Name>
@@ -12633,6 +12845,7 @@
 					<EmailConfigurationName></EmailConfigurationName>
 					<EmailMessageFileType>eml</EmailMessageFileType>
 					<SaveLocationOfEmailMessage>Emails/Messages</SaveLocationOfEmailMessage>
+					<UseLoggedInUserInFromAddress>false</UseLoggedInUserInFromAddress>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-AA70-F4D8BD04A320"
@@ -12648,11 +12861,26 @@
 					<ContentFolderLocationForIncomingAttachment/>
 					<ContentFolderLocationForSaveEmailTo/>
 					<DisplayName/>
+					<DraftOrForwardEmailAttachmentPreviewLayout>
+						<uri
+							id="005056A5-1B45-A1EB-AA71-055316296320"
+						/>
+					</DraftOrForwardEmailAttachmentPreviewLayout>
+					<EmailAttachmentPreviewLayout>
+						<uri
+							id="005056A5-1B45-A1EB-A8B6-C819E2582320"
+						/>
+					</EmailAttachmentPreviewLayout>
 					<EmailConfig>
 						<uri
 							id="005056A5-1B45-A1EB-AA71-055316272320"
 						/>
 					</EmailConfig>
+					<EmailContentLayout>
+						<uri
+							id="005056A5-1B45-A1EB-AA71-055316296320"
+						/>
+					</EmailContentLayout>
 				</Email>
 			</Email>
 			<Entity>

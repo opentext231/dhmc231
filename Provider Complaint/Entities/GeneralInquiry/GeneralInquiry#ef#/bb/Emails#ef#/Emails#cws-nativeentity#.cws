@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -591,7 +593,7 @@
 		</IdentityBuildingBlock>
 		<EmailLogBuildingBlock
 			type="com.cordys.entity.buildingblocks.emaillog.EmailLogBuildingBlock"
-			typeVersion="67141489-10E3-4E57-AB65-80B9133B1AE6"
+			typeVersion="28043D00-307B-49CD-90D7-5D4A04DF5025"
 			RuntimeDocumentID="005056A5-1B45-A1EB-AA71-055315B96320">
 			<DocumentID>005056A5-1B45-A1EB-AA71-055315B92320</DocumentID>
 			<Name>EmailLog</Name>
@@ -663,6 +665,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -685,7 +688,7 @@
 					<CreationDate>2021-04-30T15:05:56.607</CreationDate>
 					<Notes/>
 					<ConflictLevel></ConflictLevel>
-					<DataType>Text</DataType>
+					<DataType>LongText</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
 					<IsComputedProperty>false</IsComputedProperty>
@@ -701,28 +704,25 @@
 					</BuildingBlock>
 					<DisplayName/>
 					<OwnedTypeDefinition>
-						<SmallTextPropertyDefinition
-							type="com.cordys.entity.core.typesystem.primitives.text.SmallTextPropertyDefinition"
+						<LongTextPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.text.LongTextPropertyDefinition"
 							typeVersion="4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
-							RuntimeDocumentID="005056A5-1B45-A1EB-AA71-055315B76320">
-							<DocumentID>005056A5-1B45-A1EB-AA71-055315B72320</DocumentID>
-							<Name>005056A5-1B45-A1EB-AA71-055315B72320</Name>
-							<Description>005056A5-1B45-A1EB-AA71-055315B72320</Description>
-							<CreatedBy>Andrew.Acheson@dmhc.ca.gov</CreatedBy>
-							<CreationDate>2021-04-30T15:05:56.591</CreationDate>
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-cf76bc6eb652">
+							<DocumentID>7C4A7EA0-ACD4-4139-B085-7785FE9CC194</DocumentID>
+							<Name>7C4A7EA0-ACD4-4139-B085-7785FE9CC194</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:25.642</CreationDate>
 							<Notes/>
-							<DefaultValue></DefaultValue>
-							<Length>4000</Length>
-							<Pattern></Pattern>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
-						</SmallTextPropertyDefinition>
+						</LongTextPropertyDefinition>
 					</OwnedTypeDefinition>
 					<Tooltip/>
 					<TypeDefinition>
 						<uri
-							id="005056A5-1B45-A1EB-AA71-055315B72320"
+							id="7C4A7EA0-ACD4-4139-B085-7785FE9CC194"
 						/>
 					</TypeDefinition>
 				</Property>
@@ -736,7 +736,7 @@
 					<CreationDate>2021-04-30T15:05:56.623</CreationDate>
 					<Notes/>
 					<ConflictLevel></ConflictLevel>
-					<DataType>Text</DataType>
+					<DataType>LongText</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
 					<IsComputedProperty>false</IsComputedProperty>
@@ -752,28 +752,25 @@
 					</BuildingBlock>
 					<DisplayName/>
 					<OwnedTypeDefinition>
-						<SmallTextPropertyDefinition
-							type="com.cordys.entity.core.typesystem.primitives.text.SmallTextPropertyDefinition"
+						<LongTextPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.text.LongTextPropertyDefinition"
 							typeVersion="4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
-							RuntimeDocumentID="005056A5-1B45-A1EB-AA71-055315B66320">
-							<DocumentID>005056A5-1B45-A1EB-AA71-055315B62320</DocumentID>
-							<Name>005056A5-1B45-A1EB-AA71-055315B62320</Name>
-							<Description>005056A5-1B45-A1EB-AA71-055315B62320</Description>
-							<CreatedBy>Andrew.Acheson@dmhc.ca.gov</CreatedBy>
-							<CreationDate>2021-04-30T15:05:56.607</CreationDate>
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-cf76bdc7b652">
+							<DocumentID>05E2D08A-70A8-4EFC-9343-216B9E9CD947</DocumentID>
+							<Name>05E2D08A-70A8-4EFC-9343-216B9E9CD947</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:09.498</CreationDate>
 							<Notes/>
-							<DefaultValue></DefaultValue>
-							<Length>4000</Length>
-							<Pattern></Pattern>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
-						</SmallTextPropertyDefinition>
+						</LongTextPropertyDefinition>
 					</OwnedTypeDefinition>
 					<Tooltip/>
 					<TypeDefinition>
 						<uri
-							id="005056A5-1B45-A1EB-AA71-055315B62320"
+							id="05E2D08A-70A8-4EFC-9343-216B9E9CD947"
 						/>
 					</TypeDefinition>
 				</Property>
@@ -787,7 +784,7 @@
 					<CreationDate>2021-04-30T15:05:56.623</CreationDate>
 					<Notes/>
 					<ConflictLevel></ConflictLevel>
-					<DataType>Text</DataType>
+					<DataType>LongText</DataType>
 					<ExposeForReuse>false</ExposeForReuse>
 					<Expression></Expression>
 					<IsComputedProperty>false</IsComputedProperty>
@@ -803,28 +800,25 @@
 					</BuildingBlock>
 					<DisplayName/>
 					<OwnedTypeDefinition>
-						<SmallTextPropertyDefinition
-							type="com.cordys.entity.core.typesystem.primitives.text.SmallTextPropertyDefinition"
+						<LongTextPropertyDefinition
+							type="com.cordys.entity.core.typesystem.primitives.text.LongTextPropertyDefinition"
 							typeVersion="4189E3FD-7E68-423A-8289-FEFAD1EC0ED8"
-							RuntimeDocumentID="005056A5-1B45-A1EB-AA71-055315B56320">
-							<DocumentID>005056A5-1B45-A1EB-AA71-055315B52320</DocumentID>
-							<Name>005056A5-1B45-A1EB-AA71-055315B52320</Name>
-							<Description>005056A5-1B45-A1EB-AA71-055315B52320</Description>
-							<CreatedBy>Andrew.Acheson@dmhc.ca.gov</CreatedBy>
-							<CreationDate>2021-04-30T15:05:56.607</CreationDate>
+							RuntimeDocumentID="0242ac13-0004-a1ef-952b-cf76be76b652">
+							<DocumentID>8EA58AAC-1981-4421-8ED0-F226A8604F28</DocumentID>
+							<Name>8EA58AAC-1981-4421-8ED0-F226A8604F28</Name>
+							<Description/>
+							<CreatedBy>sysadmin</CreatedBy>
+							<CreationDate>2024-08-07T11:25:13.823</CreationDate>
 							<Notes/>
-							<DefaultValue></DefaultValue>
-							<Length>4000</Length>
-							<Pattern></Pattern>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
-						</SmallTextPropertyDefinition>
+						</LongTextPropertyDefinition>
 					</OwnedTypeDefinition>
 					<Tooltip/>
 					<TypeDefinition>
 						<uri
-							id="005056A5-1B45-A1EB-AA71-055315B52320"
+							id="8EA58AAC-1981-4421-8ED0-F226A8604F28"
 						/>
 					</TypeDefinition>
 				</Property>
@@ -867,6 +861,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>4000</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
@@ -966,7 +961,8 @@
 													<Notes/>
 													<DeveloperText>Sent Mail</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA71-055315B12320"
+														<uri
+															id="005056A5-1B45-A1EB-AA71-055315B12320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1004,7 +1000,8 @@
 													<Notes/>
 													<DeveloperText>Received Unread</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA71-055315AF2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA71-055315AF2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1042,7 +1039,8 @@
 													<Notes/>
 													<DeveloperText>Received Read</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA71-055315AD2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA71-055315AD2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1080,7 +1078,8 @@
 													<Notes/>
 													<DeveloperText>Draft</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-AA71-055315AB2320"
+														<uri
+															id="005056A5-1B45-A1EB-AA71-055315AB2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -1118,6 +1117,7 @@
 			<Content>
 				<Content
 					type="com.cordys.entity.buildingblocks.content.Content"
+					typeVersion="98fa9b06-188b-a1ed-b293-670a6f3b105f"
 					RuntimeDocumentID="005056A5-1B45-A1EB-AA71-055315A8E320">
 					<DocumentID>005056A5-1B45-A1EB-AA71-055315A8A320</DocumentID>
 					<Name>Untitled ContentOption</Name>
@@ -1127,12 +1127,14 @@
 					<Notes/>
 					<MaxNoOfFiles></MaxNoOfFiles>
 					<RootPath>${system.organization}/${solution.name}/${contentbuildingblock.path}</RootPath>
+					<SaveSignedDocumentAs>NewVersion</SaveSignedDocumentAs>
 					<BuildingBlock>
 						<uri
 							id="005056A5-1B45-A1EB-AA71-055315A9A320"
 						/>
 					</BuildingBlock>
 					<DisplayName/>
+					<SignedDocumentsLocation/>
 				</Content>
 			</Content>
 			<Entity>

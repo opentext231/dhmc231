@@ -12,8 +12,10 @@
 	<Notes/>
 	<ExposeForReuse>false</ExposeForReuse>
 	<IsAbstract>false</IsAbstract>
+	<IsEisNativeEntity>false</IsEisNativeEntity>
 	<IsExternallyManaged>false</IsExternallyManaged>
 	<IsSingleton>false</IsSingleton>
+	<RepositoryConnectionId></RepositoryConnectionId>
 	<TableName></TableName>
 	<BuildingBlocks>
 		<uri
@@ -664,6 +666,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>100</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -737,6 +740,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>150</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -867,7 +871,8 @@
 													<Notes/>
 													<DeveloperText>Yes</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A74D-16EEFEDA2320"
+														<uri
+															id="005056A5-1B45-A1EB-A74D-16EEFEDA2320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -905,7 +910,8 @@
 													<Notes/>
 													<DeveloperText>No</DeveloperText>
 													<Identifier>
-														<uri	id="005056A5-1B45-A1EB-A74D-16EEFED8A320"
+														<uri
+															id="005056A5-1B45-A1EB-A74D-16EEFED8A320"
 														/>
 													</Identifier>
 												</TranslatableText>
@@ -985,6 +991,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type>
@@ -1240,6 +1247,7 @@
 							<DefaultValue></DefaultValue>
 							<Length>256</Length>
 							<Pattern></Pattern>
+							<Searchable>false</Searchable>
 							<lowerBound>1</lowerBound>
 							<upperBound>1</upperBound>
 							<Type/>
