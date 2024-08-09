@@ -30,7 +30,7 @@
 	<PostRuleUrl></PostRuleUrl>
 	<PreRuleActionOption>0</PreRuleActionOption>
 	<PreRuleUrl></PreRuleUrl>
-	<RuleAction>{&quot;processName&quot;:&quot;Business Processes/NIMBUS/PCS/General Inquiry/OnGenEmailReceive&quot;,&quot;processId&quot;:&quot;005056A5-1B45-A1EB-ADC4-D72A77DA6324&quot;,&quot;fillPropertyWithProcessId&quot;:&quot;&quot;,&quot;runOnClient&quot;:false,&quot;runOnTransitionOnly&quot;:false,&quot;type&quot;:&quot;com.opentext.cordys.entityCore.elements.ruleElement.RuleActionStartProcess&quot;,&quot;sourceIsValid&quot;:true,&quot;targetIsValid&quot;:true,&quot;encodedSourceExpression&quot;:&quot;&quot;,&quot;encodedTargetExpression&quot;:&quot;&quot;,&quot;StyleDefinition&quot;:&quot;&lt;style&gt;&lt;background&gt;undefined&lt;/background&gt;&lt;color&gt;undefined&lt;/color&gt;&lt;fontStyle&gt;undefined&lt;/fontStyle&gt;&lt;fontWeight&gt;undefined&lt;/fontWeight&gt;&lt;textDecoration&gt;undefined&lt;/textDecoration&gt;&lt;borderColor&gt;undefined&lt;/borderColor&gt;&lt;labelColor&gt;undefined&lt;/labelColor&gt;&lt;labelFontWeight&gt;undefined&lt;/labelFontWeight&gt;&lt;labelTextDecoration&gt;undefined&lt;/labelTextDecoration&gt;&lt;labelFontStyle&gt;undefined&lt;/labelFontStyle&gt;&lt;/style&gt;&quot;}</RuleAction>
+	<RuleAction>{&quot;processName&quot;:&quot;Business Processes/NIMBUS/PCS/General Inquiry/OnGenEmailReceive&quot;,&quot;processId&quot;:&quot;005056A5-1B45-A1EB-ADC4-D72A77DA6324&quot;,&quot;fillPropertyWithProcessId&quot;:&quot;&quot;,&quot;runOnClient&quot;:false,&quot;runOnTransitionOnly&quot;:false,&quot;useSystemUserContext&quot;:false,&quot;type&quot;:&quot;com.opentext.cordys.entityCore.elements.ruleElement.RuleActionStartProcess&quot;,&quot;sourceIsValid&quot;:true,&quot;targetIsValid&quot;:true,&quot;encodedSourceExpression&quot;:&quot;&quot;,&quot;encodedTargetExpression&quot;:&quot;&quot;,&quot;StyleDefinition&quot;:&quot;&lt;style&gt;&lt;background&gt;undefined&lt;/background&gt;&lt;color&gt;undefined&lt;/color&gt;&lt;fontStyle&gt;undefined&lt;/fontStyle&gt;&lt;fontWeight&gt;undefined&lt;/fontWeight&gt;&lt;textDecoration&gt;undefined&lt;/textDecoration&gt;&lt;borderColor&gt;undefined&lt;/borderColor&gt;&lt;labelColor&gt;undefined&lt;/labelColor&gt;&lt;labelFontWeight&gt;undefined&lt;/labelFontWeight&gt;&lt;labelTextDecoration&gt;undefined&lt;/labelTextDecoration&gt;&lt;labelFontStyle&gt;undefined&lt;/labelFontStyle&gt;&lt;/style&gt;&quot;}</RuleAction>
 	<RuleActionFormId></RuleActionFormId>
 	<RuleActionLayoutId></RuleActionLayoutId>
 	<RuleEventType>2</RuleEventType>
@@ -74,7 +74,7 @@
 			<IsAdvancedOnly>1</IsAdvancedOnly>
 			<IsPropertyNameOnly>0</IsPropertyNameOnly>
 			<IsValid>1</IsValid>
-			<QueryCriteria>{&quot;type&quot;:&quot;AND&quot;,&quot;id&quot;:&quot;12E2DBADA6BD44CF9213D079F1653F46&quot;,&quot;terms&quot;:[{&quot;type&quot;:&quot;PropertyTerm&quot;,&quot;id&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;,&quot;itemMemberId&quot;:&quot;005056A51B45A1EBAA71055315B96320&quot;,&quot;propertyId&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;,&quot;dataType&quot;:&quot;Text&quot;,&quot;comparison&quot;:{&quot;operator&quot;:&quot;Like&quot;,&quot;value&quot;:&quot;config.ProviderComplaint.Properties.GeneralInquiryInboxEmailAddress&quot;,&quot;isValueExpression&quot;:true},&quot;itemMemberPropertyId&quot;:{&quot;itemMemberPath&quot;:[],&quot;itemMemberId&quot;:&quot;005056A51B45A1EBAA71055315B96320&quot;,&quot;propertyId&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;},&quot;fullHumanPropertyName&quot;:&quot;item.EmailLog.To&quot;}]}</QueryCriteria>
+			<QueryCriteria>{&quot;type&quot;:&quot;AND&quot;,&quot;id&quot;:&quot;902B851DD4B842BFB2F084B36D18DC48&quot;,&quot;terms&quot;:[{&quot;type&quot;:&quot;PropertyTerm&quot;,&quot;id&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;,&quot;itemMemberId&quot;:&quot;005056A51B45A1EBAA71055315B96320&quot;,&quot;propertyId&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;,&quot;dataType&quot;:&quot;LongText&quot;,&quot;comparison&quot;:{&quot;operator&quot;:&quot;Like&quot;,&quot;value&quot;:&quot;config.ProviderComplaint.Properties.GeneralInquiryInboxEmailAddress&quot;,&quot;isValueExpression&quot;:true},&quot;itemMemberPropertyId&quot;:{&quot;itemMemberPath&quot;:[],&quot;itemMemberId&quot;:&quot;005056A51B45A1EBAA71055315B96320&quot;,&quot;propertyId&quot;:&quot;487D739DA44848B382F8A87FDF6D617F&quot;},&quot;fullHumanPropertyName&quot;:&quot;item.EmailLog.To&quot;}]}</QueryCriteria>
 			<DisplayName/>
 			<Entity>
 				<uri
@@ -90,12 +90,12 @@
 			<UsedProperties>
 				<PropertyObjectPath
 					type="com.cordys.entity.core.objectpath.PropertyObjectPath"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ADCD-269BC762E324">
-					<DocumentID>005056A5-1B45-A1EB-ADCD-269BC762A324</DocumentID>
-					<Name>005056A5-1B45-A1EB-ADCD-269BC762A324</Name>
-					<Description>005056A5-1B45-A1EB-ADCD-269BC762A324</Description>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-17T17:28:23.834</CreationDate>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9584-c2143ac83cb5">
+					<DocumentID>0242ac13-0004-a1ef-9584-c2143abbbcb5</DocumentID>
+					<Name>0242ac13-0004-a1ef-9584-c2143abbbcb5</Name>
+					<Description>0242ac13-0004-a1ef-9584-c2143abbbcb5</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T05:57:23.622</CreationDate>
 					<Notes/>
 					<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 					<IntermediateRelationships/>
@@ -127,12 +127,12 @@
 				</PropertyObjectPath>
 				<PropertyObjectPath
 					type="com.cordys.entity.core.objectpath.PropertyObjectPath"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ADCD-269BC7626324">
-					<DocumentID>005056A5-1B45-A1EB-ADCD-269BC7622324</DocumentID>
-					<Name>005056A5-1B45-A1EB-ADCD-269BC7622324</Name>
-					<Description>005056A5-1B45-A1EB-ADCD-269BC7622324</Description>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-17T17:28:23.833</CreationDate>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9584-c2143aaf3cb5">
+					<DocumentID>0242ac13-0004-a1ef-9584-c2143aa2bcb5</DocumentID>
+					<Name>0242ac13-0004-a1ef-9584-c2143aa2bcb5</Name>
+					<Description>0242ac13-0004-a1ef-9584-c2143aa2bcb5</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T05:57:23.622</CreationDate>
 					<Notes/>
 					<NumberOfIntermediateRelationships>0</NumberOfIntermediateRelationships>
 					<IntermediateRelationships/>
