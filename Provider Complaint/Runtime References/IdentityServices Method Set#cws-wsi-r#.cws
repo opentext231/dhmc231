@@ -11,7 +11,7 @@
 	<CreationDate>2021-05-13T01:29:56.396</CreationDate>
 	<Notes/>
 	<BinaryReferenceInfo></BinaryReferenceInfo>
-	<CapArtifactHash>a32ba80c0c8b31371927415ba52e8d9c69c51c89</CapArtifactHash>
+	<CapArtifactHash>ac4c45bc253e337ebb43e33a08ce484d9b13a192</CapArtifactHash>
 	<ISVPName></ISVPName>
 	<RuntimeKey>IdentityServices Method Set</RuntimeKey>
 	<PackageInformation>
@@ -27,7 +27,7 @@
 			<ArtifactID>71161efd-b68e-4b93-a70f-01f72931e879</ArtifactID>
 			<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
 			<CAPName>OpenText Identity</CAPName>
-			<CAPVersion>ver20.4build16</CAPVersion>
+			<CAPVersion>ver24.3build7</CAPVersion>
 		</CordysBinaryReferenceCAPInfo>
 	</PackageInformation>
 	<RuntimeSchemaDefinitions>
@@ -63,17 +63,17 @@
 			<PackageInformation>
 				<CordysBinaryReferenceCAPInfo
 					type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ACE2-ADD93F0EE322">
-					<DocumentID>005056A5-1B45-A1EB-ACE2-ADD93F0EA322</DocumentID>
-					<Name>005056A5-1B45-A1EB-ACE2-ADD93F0EA322</Name>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c979690ea">
+					<DocumentID>0242ac13-0004-a1ef-9590-5f4c977b10ea</DocumentID>
+					<Name>0242ac13-0004-a1ef-9590-5f4c977b10ea</Name>
 					<Description/>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-13T01:29:57.302</CreationDate>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T11:21:14.607</CreationDate>
 					<Notes/>
 					<ArtifactID></ArtifactID>
 					<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
 					<CAPName>OpenText Identity</CAPName>
-					<CAPVersion>ver20.4build16</CAPVersion>
+					<CAPVersion>ver24.3build7</CAPVersion>
 				</CordysBinaryReferenceCAPInfo>
 			</PackageInformation>
 			<SchemaFragments>
@@ -657,11 +657,13 @@
 													<xs:element
 														name="MemberType"
 														maxOccurs="unbounded">
-														<xs:simpleType>	<xs:restriction
-		base="xs:string">
-		<xs:enumeration
-				value="USER"
-		/>	</xs:restriction>
+														<xs:simpleType>
+															<xs:restriction
+	base="xs:string">
+	<xs:enumeration
+			value="USER"
+	/>
+															</xs:restriction>
 														</xs:simpleType>
 													</xs:element>
 												</xs:sequence>
@@ -682,12 +684,14 @@
 														name="Users"
 														maxOccurs="1"
 														minOccurs="0">
-														<xs:complexType>	<xs:sequence>
-		<xs:element
-				maxOccurs="unbounded"
-				minOccurs="0"
-				ref="tns2:User"
-		/>	</xs:sequence>
+														<xs:complexType>
+															<xs:sequence>
+	<xs:element
+			maxOccurs="unbounded"
+			minOccurs="0"
+			ref="tns2:User"
+	/>
+															</xs:sequence>
 														</xs:complexType>
 													</xs:element>
 												</xs:sequence>
@@ -783,17 +787,17 @@
 			<PackageInformation>
 				<CordysBinaryReferenceCAPInfo
 					type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ACE2-ADD93F0BE322">
-					<DocumentID>005056A5-1B45-A1EB-ACE2-ADD93F0BA322</DocumentID>
-					<Name>005056A5-1B45-A1EB-ACE2-ADD93F0BA322</Name>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c321090ea">
+					<DocumentID>0242ac13-0004-a1ef-9590-5f4c31f510ea</DocumentID>
+					<Name>0242ac13-0004-a1ef-9590-5f4c31f510ea</Name>
 					<Description/>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-13T01:29:57.302</CreationDate>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T11:21:14.607</CreationDate>
 					<Notes/>
 					<ArtifactID></ArtifactID>
 					<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
 					<CAPName>OpenText Identity</CAPName>
-					<CAPVersion>ver20.4build16</CAPVersion>
+					<CAPVersion>ver24.3build7</CAPVersion>
 				</CordysBinaryReferenceCAPInfo>
 			</PackageInformation>
 			<WebserviceInterface>
@@ -965,17 +969,17 @@
 			<PackageInformation>
 				<CordysBinaryReferenceCAPInfo
 					type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ACE2-ADD93F0CE322">
-					<DocumentID>005056A5-1B45-A1EB-ACE2-ADD93F0CA322</DocumentID>
-					<Name>005056A5-1B45-A1EB-ACE2-ADD93F0CA322</Name>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c7b1010ea">
+					<DocumentID>0242ac13-0004-a1ef-9590-5f4c7afc10ea</DocumentID>
+					<Name>0242ac13-0004-a1ef-9590-5f4c7afc10ea</Name>
 					<Description/>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-13T01:29:57.302</CreationDate>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T11:21:14.607</CreationDate>
 					<Notes/>
 					<ArtifactID></ArtifactID>
 					<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
 					<CAPName>OpenText Identity</CAPName>
-					<CAPVersion>ver20.4build16</CAPVersion>
+					<CAPVersion>ver24.3build7</CAPVersion>
 				</CordysBinaryReferenceCAPInfo>
 			</PackageInformation>
 			<WebserviceInterface>
@@ -1136,17 +1140,401 @@
 			<PackageInformation>
 				<CordysBinaryReferenceCAPInfo
 					type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
-					RuntimeDocumentID="005056A5-1B45-A1EB-ACE2-ADD93F0DE322">
-					<DocumentID>005056A5-1B45-A1EB-ACE2-ADD93F0DA322</DocumentID>
-					<Name>005056A5-1B45-A1EB-ACE2-ADD93F0DA322</Name>
+					RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c7e1210ea">
+					<DocumentID>0242ac13-0004-a1ef-9590-5f4c7e0090ea</DocumentID>
+					<Name>0242ac13-0004-a1ef-9590-5f4c7e0090ea</Name>
 					<Description/>
-					<CreatedBy>Henry.Chiu@dmhc.ca.gov</CreatedBy>
-					<CreationDate>2021-05-13T01:29:57.302</CreationDate>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T11:21:14.607</CreationDate>
 					<Notes/>
 					<ArtifactID></ArtifactID>
 					<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
 					<CAPName>OpenText Identity</CAPName>
-					<CAPVersion>ver20.4build16</CAPVersion>
+					<CAPVersion>ver24.3build7</CAPVersion>
+				</CordysBinaryReferenceCAPInfo>
+			</PackageInformation>
+			<WebserviceInterface>
+				<uri
+					id="005056A5-1B45-A1EB-ACE2-956D99C1A322"
+				/>
+			</WebserviceInterface>
+		</WebserviceOperationRuntime>
+		<WebserviceOperationRuntime
+			type="com.cordys.wsdl.WebserviceOperationRuntime"
+			typeVersion="0019B981-E9E3-11DF-FAD3-F797D376BD43"
+			RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c763a90ea">
+			<DocumentID>0242ac13-0004-a1ef-9590-5f4c761a10ea</DocumentID>
+			<Name>GetMembersOfGroup</Name>
+			<Description>Runtime reference for Web Service Operation GetMembersOfGroup in Web Service IdentityServices Method Set.</Description>
+			<CreatedBy>sysadmin</CreatedBy>
+			<CreationDate>2024-08-09T11:21:14.607</CreationDate>
+			<Notes/>
+			<BinaryReferenceInfo></BinaryReferenceInfo>
+			<ISVPName></ISVPName>
+			<ImplementationType>ApplicationServer</ImplementationType>
+			<RuntimeKey>http://schemas.cordys.com/identity/1.0/GetMembersOfGroup</RuntimeKey>
+			<WSDLDefinition>
+				<wsdl:definitions
+					xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+					xmlns:cordys="http://schemas.cordys.com/General/1.0/"
+					xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+					xmlns:tns="http://schemas.cordys.com/identity/1.0"
+					xmlns=""
+					name="GetMembersOfGroup"
+					targetNamespace="http://schemas.cordys.com/identity/1.0">
+					<wsdl:types>
+						<xs:schema
+							xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							xmlns:tns1="http://schemas/OpenTextEntityIdentityComponents/Identity"
+							xmlns:tns3="http://schemas/OpenTextEntityIdentityComponents/Person"
+							xmlns:tns4="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0"
+							elementFormDefault="qualified"
+							targetNamespace="http://schemas/OpenTextEntityIdentityComponents/User">
+							<xs:import
+								namespace="http://schemas/OpenTextEntityIdentityComponents/Identity"
+							/>
+							<xs:import
+								namespace="http://schemas/OpenTextEntityIdentityComponents/Person"
+							/>
+							<xs:import
+								namespace="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0"
+							/>
+							<xs:element
+								name="User">
+								<xs:complexType>
+									<xs:all>
+										<xs:element
+											name="FullName"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											ref="tns1:Identity-id"
+										/>
+										<xs:element
+											ref="tns1:Name"
+										/>
+										<xs:element
+											ref="tns1:Description"
+										/>
+										<xs:element
+											ref="tns1:IdentityDisplayName"
+										/>
+										<xs:element
+											name="memberid"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											name="UserId"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="PreferredLocale"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											name="toPerson">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element
+														ref="tns3:Person-id"
+													/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element
+											ref="tns4:Title"
+										/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:schema>
+						<xs:schema
+							xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							elementFormDefault="qualified"
+							targetNamespace="http://schemas/OpenTextEntityIdentityComponents/Identity">
+							<xs:element
+								name="Name"
+								type="xs:string"
+								nillable="true"
+							/>
+							<xs:element
+								name="Description"
+								type="xs:string"
+								nillable="true"
+							/>
+							<xs:element
+								name="IdentityDisplayName"
+								nillable="true"
+								type="xs:string"
+							/>
+							<xs:element
+								name="Identity-id">
+								<xs:complexType>
+									<xs:all>
+										<xs:element
+											name="Id"
+											nillable="true"
+											type="xs:long"
+										/>
+										<xs:element
+											name="ItemId"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="Level"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="EntityType"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="ItemStatus"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="IsTemporaryCopy"
+											nillable="true"
+											type="xs:boolean"
+										/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:schema>
+						<xs:schema
+							xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							elementFormDefault="qualified"
+							targetNamespace="http://schemas/OpenTextEntityIdentityComponents/Person">
+							<xs:element
+								name="Person-id">
+								<xs:complexType>
+									<xs:all>
+										<xs:element
+											name="Id"
+											nillable="true"
+											type="xs:long"
+										/>
+										<xs:element
+											name="ItemId"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="Level"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="EntityType"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="ItemStatus"
+											nillable="true"
+											type="xs:string"
+										/>
+										<xs:element
+											minOccurs="0"
+											name="IsTemporaryCopy"
+											nillable="true"
+											type="xs:boolean"
+										/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:schema>
+						<xs:schema
+							xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							elementFormDefault="qualified"
+							targetNamespace="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+							<xs:element
+								name="Title">
+								<xs:complexType>
+									<xs:all>
+										<xs:element
+											name="Value"
+											type="xs:string"
+											nillable="true"
+										/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:schema>
+						<xs:schema
+							xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							xmlns:tns2="http://schemas/OpenTextEntityIdentityComponents/User"
+							elementFormDefault="qualified"
+							targetNamespace="http://schemas.cordys.com/identity/1.0">
+							<xs:import
+								xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+								namespace="http://schemas.cordys.com/General/1.0/"
+								schemaLocation="http://schemas.cordys.com/CordysSchemas//CordysFaultDetails.xsd"
+							/>
+							<xs:import
+								namespace="http://schemas/OpenTextEntityIdentityComponents/User"
+							/>
+							<xs:element
+								name="GetMembersOfGroup">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element
+											name="ItemId"
+											type="xs:string"
+											minOccurs="1"
+											maxOccurs="1"
+											nillable="false"
+										/>
+										<xs:element
+											name="IncludeIndirectMembers"
+											type="xs:boolean"
+											minOccurs="0"
+											maxOccurs="1"
+											default="false"
+										/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element
+								name="GetMembersOfGroupResponse">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element
+											name="Members">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element
+														name="Users"
+														maxOccurs="1"
+														minOccurs="0">
+														<xs:complexType>
+															<xs:sequence>
+	<xs:element
+			maxOccurs="unbounded"
+			minOccurs="0"
+			ref="tns2:User"
+	/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:schema>
+					</wsdl:types>
+					<wsdl:message
+						name="GetMembersOfGroup">
+						<wsdl:part
+							element="tns:GetMembersOfGroup"
+							name="body"
+						/>
+					</wsdl:message>
+					<wsdl:message
+						name="GetMembersOfGroupResponse">
+						<wsdl:part
+							element="tns:GetMembersOfGroupResponse"
+							name="body"
+						/>
+					</wsdl:message>
+					<wsdl:message
+						name="CordysFaultDetail">
+						<wsdl:part
+							name="FaultDetail"
+							element="cordys:FaultDetails"
+						/>
+					</wsdl:message>
+					<wsdl:portType
+						name="GetMembersOfGroupPortType">
+						<wsdl:operation
+							name="GetMembersOfGroupOperation">
+							<wsdl:input
+								message="tns:GetMembersOfGroup"
+							/>
+							<wsdl:output
+								message="tns:GetMembersOfGroupResponse"
+							/>
+							<wsdl:fault
+								name="FaultDetail"
+								message="tns:CordysFaultDetail"
+							/>
+						</wsdl:operation>
+					</wsdl:portType>
+					<wsdl:binding
+						name="GetMembersOfGroupBinding"
+						type="tns:GetMembersOfGroupPortType">
+						<soap:binding
+							style="document"
+							transport="http://schemas.xmlsoap.org/soap/http"
+						/>
+						<wsdl:operation
+							name="GetMembersOfGroupOperation">
+							<soap:operation
+								soapAction=""
+							/>
+							<wsdl:input>
+								<soap:body
+									use="literal"
+								/>
+							</wsdl:input>
+							<wsdl:output>
+								<soap:body
+									use="literal"
+								/>
+							</wsdl:output>
+							<wsdl:fault
+								name="FaultDetail">
+								<soap:fault
+									name="FaultDetail"
+									use="literal"
+								/>
+							</wsdl:fault>
+						</wsdl:operation>
+					</wsdl:binding>
+					<wsdl:service
+						name="GetMembersOfGroupService">
+						<wsdl:port
+							binding="tns:GetMembersOfGroupBinding"
+							name="GetMembersOfGroupPort">
+							<soap:address
+								location="com.eibus.web.soap.Gateway.wcp"
+							/>
+						</wsdl:port>
+					</wsdl:service>
+				</wsdl:definitions>
+			</WSDLDefinition>
+			<PackageInformation>
+				<CordysBinaryReferenceCAPInfo
+					type="com.cordys.cws.binaryreference.CordysBinaryReferenceCAPInfo"
+					RuntimeDocumentID="0242ac13-0004-a1ef-9590-5f4c771b90ea">
+					<DocumentID>0242ac13-0004-a1ef-9590-5f4c770790ea</DocumentID>
+					<Name>0242ac13-0004-a1ef-9590-5f4c770790ea</Name>
+					<Description/>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-09T11:21:14.607</CreationDate>
+					<Notes/>
+					<ArtifactID></ArtifactID>
+					<CAPID>e76173fe-bfd3-4611-996a-b97e812112f5</CAPID>
+					<CAPName>OpenText Identity</CAPName>
+					<CAPVersion>ver24.3build7</CAPVersion>
 				</CordysBinaryReferenceCAPInfo>
 			</PackageInformation>
 			<WebserviceInterface>
