@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="0242ac13-0003-a1ef-961d-b0a4a23e3c82">
+	<DocumentID>0242ac13-0003-a1ef-961d-b0a4a22a3c82</DocumentID>
+	<Name>0242ac13-0003-a1ef-961d-b0a4a22a3c82</Name>
+	<Description>calculateLatestBusinessDate</Description>
+	<CreatedBy>sysadmin</CreatedBy>
+	<CreationDate>2024-08-12T06:49:03.184</CreationDate>
+	<Notes/>
+	<Text>calculateLatestBusinessDate</Text>
+	<Language>
+		<uri
+			id="005056A5-1B45-A1EB-A041-3A0CD27E631D"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="0242ac13-0003-a1ef-961d-b0a4a2023c82"
+		/>
+	</TextIdentifier>
+</TranslatedText>

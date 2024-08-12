@@ -155,7 +155,7 @@
 							width="180"
 							height="130"
 							x="940"
-							y="192.5"
+							y="192.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -169,7 +169,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/home/doshi/wcp/theme/default/icon/processobject/activity_collapse_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/home/system/wcp/theme/default/icon/processobject/activity_collapse_sb.gif"
 					x="1022.01"
 					y="303.01"
 					height="16"
@@ -177,7 +177,7 @@
 				/>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/foreach_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/foreach_sb.gif"
 					x="1004.01"
 					y="303.01"
 					height="16"
@@ -285,7 +285,7 @@
 							width="127"
 							height="80"
 							x="303"
-							y="239.5"
+							y="239.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -299,7 +299,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
 					x="298.01"
 					y="218.01"
 					height="16"
@@ -359,7 +359,7 @@
 							width="127"
 							height="80"
 							x="783"
-							y="225.5"
+							y="224.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -373,7 +373,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
 					x="778.01"
 					y="218.01"
 					height="16"
@@ -412,7 +412,7 @@
 							width="127"
 							height="80"
 							x="973"
-							y="249.5"
+							y="249.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -426,7 +426,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
 					x="968.01"
 					y="228.01"
 					height="16"
@@ -465,7 +465,7 @@
 							width="127"
 							height="80"
 							x="123"
-							y="239.5"
+							y="239.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -479,7 +479,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
 					x="118.01"
 					y="218.01"
 					height="16"
@@ -518,7 +518,7 @@
 							width="127"
 							height="80"
 							x="503"
-							y="232.5"
+							y="232.25"
 						/>
 					</flowRegion>
 					<flowDiv>
@@ -532,7 +532,7 @@
 				</flowText>
 				<image
 					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xlink:href="https://dmhc-aw-dev.opentext.cloud/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
+					xlink:href="http://skothurpf1nhecv:8080/cordys/wcp/theme/default/icon/processobject/automaticactivity_sb.gif"
 					x="498.01"
 					y="218.01"
 					height="16"
@@ -583,6 +583,8 @@
 					xmlns="">o_2</activityid>
 				<activityid
 					xmlns="">o_33</activityid>
+				<activityid
+					xmlns="">o_47</activityid>
 			</namespace>
 			<namespace
 				xmlns=""
@@ -1013,6 +1015,7 @@
 			<RpaRoboName></RpaRoboName>
 			<RpaRoboSelection>static</RpaRoboSelection>
 			<RpaRoboStrategy>triggerWithAnyRobo</RpaRoboStrategy>
+			<RpaType>uipath</RpaType>
 			<SoapProcessor></SoapProcessor>
 			<SoapRequestTimeOut></SoapRequestTimeOut>
 			<SoapRequestTimeOutDynamic>staticValue</SoapRequestTimeOutDynamic>
@@ -1189,6 +1192,7 @@
 			<RpaRoboName></RpaRoboName>
 			<RpaRoboSelection>static</RpaRoboSelection>
 			<RpaRoboStrategy>triggerWithAnyRobo</RpaRoboStrategy>
+			<RpaType>uipath</RpaType>
 			<SoapProcessor></SoapProcessor>
 			<SoapRequestTimeOut></SoapRequestTimeOut>
 			<SoapRequestTimeOutDynamic>staticValue</SoapRequestTimeOutDynamic>
@@ -1528,6 +1532,7 @@
 			<RpaRoboName></RpaRoboName>
 			<RpaRoboSelection>static</RpaRoboSelection>
 			<RpaRoboStrategy>triggerWithAnyRobo</RpaRoboStrategy>
+			<RpaType>uipath</RpaType>
 			<SoapProcessor></SoapProcessor>
 			<SoapRequestTimeOut></SoapRequestTimeOut>
 			<SoapRequestTimeOutDynamic>staticValue</SoapRequestTimeOutDynamic>
@@ -1738,6 +1743,7 @@
 			<RpaRoboName></RpaRoboName>
 			<RpaRoboSelection>static</RpaRoboSelection>
 			<RpaRoboStrategy>triggerWithAnyRobo</RpaRoboStrategy>
+			<RpaType>uipath</RpaType>
 			<SoapProcessor></SoapProcessor>
 			<SoapRequestTimeOut></SoapRequestTimeOut>
 			<SoapRequestTimeOutDynamic>staticValue</SoapRequestTimeOutDynamic>
@@ -1930,7 +1936,7 @@
 			<ExecutionOrganization></ExecutionOrganization>
 			<ExecutionUserType>currentOwner</ExecutionUserType>
 			<FontSize>12</FontSize>
-			<InProcessExecution></InProcessExecution>
+			<InProcessExecution>false</InProcessExecution>
 			<LogData/>
 			<MapSOAPFaultCode>true</MapSOAPFaultCode>
 			<Method></Method>
@@ -1959,6 +1965,7 @@
 			<RpaRoboName></RpaRoboName>
 			<RpaRoboSelection>static</RpaRoboSelection>
 			<RpaRoboStrategy>triggerWithAnyRobo</RpaRoboStrategy>
+			<RpaType>uipath</RpaType>
 			<SoapProcessor></SoapProcessor>
 			<SoapRequestTimeOut></SoapRequestTimeOut>
 			<SoapRequestTimeOutDynamic>staticValue</SoapRequestTimeOutDynamic>
@@ -1969,12 +1976,12 @@
 			<ActivityMessages>
 				<Message
 					type="com.cordys.bpm.Message"
-					RuntimeDocumentID="005056A5-1B45-A1EB-BC41-58B0B7656324">
-					<DocumentID>005056A5-1B45-A1EB-BC41-58B0B7652324</DocumentID>
-					<Name>BusinessCalendar_calculateStartDateInBusinessDaysInputMessage</Name>
-					<Description>calculateStartDateInBusinessDays/BusinessCalendar_calculateStartDateInBusinessDaysInputMessage</Description>
-					<CreatedBy>pdoshi@solusofttech.com</CreatedBy>
-					<CreationDate>2021-07-30T07:17:16.126</CreationDate>
+					RuntimeDocumentID="0242ac13-0003-a1ef-961d-5d8c93db357e">
+					<DocumentID>0242ac13-0003-a1ef-961d-5d8c93ceb57e</DocumentID>
+					<Name>calculateStartDateInBusinessDaysInput</Name>
+					<Description>calculateStartDateInBusinessDays/calculateStartDateInBusinessDaysInput</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-12T06:43:55.923</CreationDate>
 					<Notes/>
 					<Namespace>http://schemas.cordys.com/buscalendar/runtime/BusinessCalendar/1.0</Namespace>
 					<OwnerMessageType></OwnerMessageType>
@@ -1989,12 +1996,12 @@
 				</Message>
 				<Message
 					type="com.cordys.bpm.Message"
-					RuntimeDocumentID="005056A5-1B45-A1EB-BC41-58B0B764E324">
-					<DocumentID>005056A5-1B45-A1EB-BC41-58B0B764A324</DocumentID>
-					<Name>BusinessCalendar_calculateStartDateInBusinessDaysOutputMessage</Name>
-					<Description>calculateStartDateInBusinessDays/BusinessCalendar_calculateStartDateInBusinessDaysOutputMessage</Description>
-					<CreatedBy>pdoshi@solusofttech.com</CreatedBy>
-					<CreationDate>2021-07-30T07:17:16.126</CreationDate>
+					RuntimeDocumentID="0242ac13-0003-a1ef-961d-5d8c93c2357e">
+					<DocumentID>0242ac13-0003-a1ef-961d-5d8c93b3357e</DocumentID>
+					<Name>calculateStartDateInBusinessDaysOutput</Name>
+					<Description>calculateStartDateInBusinessDays/calculateStartDateInBusinessDaysOutput</Description>
+					<CreatedBy>sysadmin</CreatedBy>
+					<CreationDate>2024-08-12T06:43:55.923</CreationDate>
 					<Notes/>
 					<Namespace>http://schemas.cordys.com/buscalendar/runtime/BusinessCalendar/1.0</Namespace>
 					<OwnerMessageType></OwnerMessageType>
@@ -2126,7 +2133,7 @@
 			</TranslatableName>
 			<WebserviceBindingOperation>
 				<uri
-					id="005056A5-1B45-A1EB-BC3E-4CEDADA86324"
+					id="0242ac13-0003-a1ef-961d-756a12f3126d"
 				/>
 			</WebserviceBindingOperation>
 		</ServiceTask>
